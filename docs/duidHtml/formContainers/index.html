@@ -1,0 +1,1654 @@
+<!doctype html><html lang="fr" class="no-js"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="lang:clipboard.copy" content="Copier dans le presse-papier"><meta name="lang:clipboard.copied" content="Copié dans le presse-papier"><meta name="lang:search.language" content="fr"><meta name="lang:search.pipeline.stopwords" content="True"><meta name="lang:search.pipeline.trimmer" content="True"><meta name="lang:search.result.none" content="Aucun document trouvé"><meta name="lang:search.result.one" content="1 document trouvé"><meta name="lang:search.result.other" content="# documents trouvés"><meta name="lang:search.tokenizer" content="[\s\-]+"><link rel="shortcut icon" href="../../assets/images/favicon.png"><meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.3.1"><title>FormContainers - Djedou UI Design System</title><link rel="stylesheet" href="../../assets/stylesheets/application.4031d38b.css"><link rel="stylesheet" href="../../assets/stylesheets/application-palette.224b79ff.css"><meta name="theme-color" content="#2196f3"><script src="../../assets/javascripts/modernizr.74668098.js"></script><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=swap"><style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style><link rel="stylesheet" href="../../assets/fonts/material-icons.css"></head><body dir="ltr" data-md-color-primary="blue" data-md-color-accent="blue"><svg class="md-svg"><defs></defs></svg> <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off"> <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off"> <label class="md-overlay" data-md-component="overlay" for="__drawer"></label><a href="#formcontainers" tabindex="1" class="md-skip">Skip to content </a><header class="md-header" data-md-component="header"><nav class="md-header-nav md-grid"><div class="md-flex"><div class="md-flex__cell md-flex__cell--shrink"><a href="../.." title="Djedou UI Design System" class="md-header-nav__button md-logo"><i class="md-icon"></i></a></div><div class="md-flex__cell md-flex__cell--shrink"><label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label></div><div class="md-flex__cell md-flex__cell--stretch"><div class="md-flex__ellipsis md-header-nav__title" data-md-component="title"><span class="md-header-nav__topic">Djedou UI Design System</span><span class="md-header-nav__topic">FormContainers</span></div></div><div class="md-flex__cell md-flex__cell--shrink"><label class="md-icon md-icon--search md-header-nav__button" for="__search"></label><div class="md-search" data-md-component="search" role="dialog"><label class="md-search__overlay" for="__search"></label><div class="md-search__inner" role="search"><form class="md-search__form" name="search"><input type="text" class="md-search__input" name="query" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active"> <label class="md-icon md-search__icon" for="__search"></label> <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">&#xE5CD;</button></form><div class="md-search__output"><div class="md-search__scrollwrap" data-md-scrollfix><div class="md-search-result" data-md-component="result"><div class="md-search-result__meta">Taper pour démarrer la recherche</div><ol class="md-search-result__list"></ol></div></div></div></div></div></div></div></nav></header><div class="md-container"><main class="md-main"><div class="md-main__inner md-grid" data-md-component="container"><div class="md-sidebar md-sidebar--primary" data-md-component="navigation"><div class="md-sidebar__scrollwrap"><div class="md-sidebar__inner"><nav class="md-nav md-nav--primary" data-md-level="0"><label class="md-nav__title md-nav__title--site" for="__drawer"><a href="../.." title="Djedou UI Design System" class="md-nav__button md-logo"><i class="md-icon"></i></a>Djedou UI Design System</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="../.." title="Home" class="md-nav__link">Home</a></li><li class="md-nav__item md-nav__item--active md-nav__item--nested"><input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked><label class="md-nav__link" for="nav-2">DuidHtml</label><nav class="md-nav" data-md-component="collapsible" data-md-level="1"><label class="md-nav__title" for="nav-2">DuidHtml</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item md-nav__item--active"><input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc"><label class="md-nav__link md-nav__link--active" for="__toc">FormContainers</label><a href="./" title="FormContainers" class="md-nav__link md-nav__link--active">FormContainers</a><nav class="md-nav md-nav--secondary"><label class="md-nav__title" for="__toc">Table des matières</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="#form" title="Form" class="md-nav__link">Form</a></li><li class="md-nav__item"><a href="#modalform" title="ModalForm" class="md-nav__link">ModalForm</a></li><li class="md-nav__item"><a href="#button" title="Button" class="md-nav__link">Button</a></li><li class="md-nav__item"><a href="#buttonreset" title="ButtonReset" class="md-nav__link">ButtonReset</a></li><li class="md-nav__item"><a href="#buttonsubmit" title="ButtonSubmit" class="md-nav__link">ButtonSubmit</a></li><li class="md-nav__item"><a href="#dropdawdatalist" title="DropDawDatalist" class="md-nav__link">DropDawDatalist</a></li><li class="md-nav__item"><a href="#dropdawselect" title="DropDawSelect" class="md-nav__link">DropDawSelect</a></li><li class="md-nav__item"><a href="#dropdawselectgroup" title="DropDawSelectGroup" class="md-nav__link">DropDawSelectGroup</a></li><li class="md-nav__item"><a href="#formfieldset" title="FormFieldset" class="md-nav__link">FormFieldset</a></li><li class="md-nav__item"><a href="#inputbutton" title="InputButton" class="md-nav__link">InputButton</a></li><li class="md-nav__item"><a href="#inputcheckbox" title="InputCheckbox" class="md-nav__link">InputCheckbox</a></li><li class="md-nav__item"><a href="#inputcolor" title="InputColor" class="md-nav__link">InputColor</a></li></ul></nav></li></ul></nav></li><li class="md-nav__item md-nav__item--nested"><input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3"><label class="md-nav__link" for="nav-3">DuidModels</label><nav class="md-nav" data-md-component="collapsible" data-md-level="1"><label class="md-nav__title" for="nav-3">DuidModels</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="../../duidModels/formContainers/" title="FormContainers" class="md-nav__link">FormContainers</a></li></ul></nav></li></ul></nav></div></div></div><div class="md-sidebar md-sidebar--secondary" data-md-component="toc"><div class="md-sidebar__scrollwrap"><div class="md-sidebar__inner"><nav class="md-nav md-nav--secondary"><label class="md-nav__title" for="__toc">Table des matières</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="#form" title="Form" class="md-nav__link">Form</a></li><li class="md-nav__item"><a href="#modalform" title="ModalForm" class="md-nav__link">ModalForm</a></li><li class="md-nav__item"><a href="#button" title="Button" class="md-nav__link">Button</a></li><li class="md-nav__item"><a href="#buttonreset" title="ButtonReset" class="md-nav__link">ButtonReset</a></li><li class="md-nav__item"><a href="#buttonsubmit" title="ButtonSubmit" class="md-nav__link">ButtonSubmit</a></li><li class="md-nav__item"><a href="#dropdawdatalist" title="DropDawDatalist" class="md-nav__link">DropDawDatalist</a></li><li class="md-nav__item"><a href="#dropdawselect" title="DropDawSelect" class="md-nav__link">DropDawSelect</a></li><li class="md-nav__item"><a href="#dropdawselectgroup" title="DropDawSelectGroup" class="md-nav__link">DropDawSelectGroup</a></li><li class="md-nav__item"><a href="#formfieldset" title="FormFieldset" class="md-nav__link">FormFieldset</a></li><li class="md-nav__item"><a href="#inputbutton" title="InputButton" class="md-nav__link">InputButton</a></li><li class="md-nav__item"><a href="#inputcheckbox" title="InputCheckbox" class="md-nav__link">InputCheckbox</a></li><li class="md-nav__item"><a href="#inputcolor" title="InputColor" class="md-nav__link">InputColor</a></li></ul></nav></div></div></div><div class="md-content"><article class="md-content__inner md-typeset"><h1 id="formcontainers">FormContainers</h1>
+<h2 id="form">Form</h2>
+<details class="note"><summary>Exemple</summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span><span class="nx">Component</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;react&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Form</span><span class="p">,</span> <span class="nx">DuidStyle</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;duidsystem-duidhtml&quot;</span><span class="p">;</span>
+<span class="cm">/* ou encore</span>
+<span class="cm">import Form from &quot;duidsystem-duidhtml/Form&quot;;</span>
+<span class="cm">import DuidStyle from &quot;duidsystem-duidhtml/DuidStyle&quot;;</span>
+<span class="cm">*/</span>
+
+
+<span class="kr">class</span> <span class="nx">Main</span> <span class="kr">extends</span> <span class="nx">Component</span><span class="p">{</span>
+
+    <span class="nx">render</span><span class="p">(){</span> 
+        <span class="k">return</span><span class="p">(</span>
+            <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">Form</span> 
+                    <span class="nx">style</span> <span class="o">=</span> <span class="s2">&quot;test&quot;</span>
+                <span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">djed</span> <span class="nx">form</span><span class="o">&lt;</span><span class="err">/p&gt; </span>
+                <span class="o">&lt;</span><span class="err">/Form&gt;</span>
+                <span class="o">&lt;</span><span class="nx">DuidStyle</span><span class="o">&gt;</span><span class="p">{</span><span class="sb">`</span>
+<span class="sb">                    .test{</span>
+<span class="sb">                        color: blue;</span>
+<span class="sb">                    }</span>
+
+<span class="sb">                `</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/DuidStyle&gt;</span>
+            <span class="o">&lt;</span><span class="err">/div&gt;</span>
+        <span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">Main</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
+
+</details>
+<details class="note"><summary>Les props du composant Form</summary><table>
+<thead>
+<tr>
+<th align="center">Props</th>
+<th align="center">Valeurs ou Types</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">style</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">objet</span></code></strong> ou <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">action</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">method</td>
+<td align="center"><strong><code class="codehilite"><span class="k">get</span></code></strong> ou <strong><code class="codehilite"><span class="n">post</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">name</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">enctype</td>
+<td align="center"><strong><code class="codehilite"><span class="n">application</span><span class="o">/</span><span class="n">x</span><span class="o">-</span><span class="n">www</span><span class="o">-</span><span class="n">form</span><span class="o">-</span><span class="n">urlencoded</span></code></strong> ou <strong><code class="codehilite"><span class="n">multipart</span><span class="o">/</span><span class="n">form</span><span class="o">-</span><span class="k">data</span></code></strong> ou <strong><code class="codehilite"><span class="nb">text</span><span class="o">/</span><span class="n">plain</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">target</td>
+<td align="center"><strong><code class="codehilite"><span class="n">_self</span></code></strong> ou <strong><code class="codehilite"><span class="n">_parent</span></code></strong> ou <strong><code class="codehilite"><span class="n">_top</span></code></strong> ou <strong><code class="codehilite"><span class="n">_blank</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">acceptCharset</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">novalidate</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">booléen</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">autocomplete</td>
+<td align="center"><strong><code class="codehilite"><span class="k">on</span></code></strong> ou <strong><code class="codehilite"><span class="k">off</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">onSubmit</td>
+<td align="center">de type <strong><code class="codehilite"><span class="k">function</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">onReset</td>
+<td align="center">de type <strong><code class="codehilite"><span class="k">function</span></code></strong></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="modalform">ModalForm</h2>
+<details class="note"><summary>Exemple</summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span><span class="nx">Component</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;react&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">ModalForm</span> <span class="nx">from</span> <span class="s2">&quot;duidsystem-duidhtml/ModalForm&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">withStyles</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@material-ui/styles&#39;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">styles</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">root</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="nx">modal</span><span class="o">:</span><span class="p">{</span>
+        <span class="nx">boxShadow</span><span class="o">:</span><span class="s2">&quot; 12px 12px 2px 1px rgba(0, 0, 255, .2)&quot;</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+
+
+<span class="kr">class</span> <span class="nx">Main</span> <span class="kr">extends</span> <span class="nx">Component</span><span class="p">{</span>
+
+    <span class="nx">render</span><span class="p">(){</span> 
+        <span class="kr">const</span> <span class="p">{</span><span class="nx">classes</span><span class="p">}</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">;</span>
+        <span class="k">return</span><span class="p">(</span>
+            <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">ModalForm</span> 
+                     <span class="nx">modalStyle</span> <span class="o">=</span> <span class="p">{</span><span class="nx">classes</span><span class="p">.</span><span class="nx">modal</span><span class="p">}</span>
+                     <span class="nx">formStyle</span> <span class="o">=</span> <span class="p">{</span><span class="nx">classes</span><span class="p">.</span><span class="nx">root</span><span class="p">}</span>
+                     <span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;modalTest&quot;</span> 
+                <span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">duidhtml</span> <span class="nx">Modalform</span><span class="o">&lt;</span><span class="err">/p&gt; </span>
+                <span class="o">&lt;</span><span class="err">/ModalForm&gt;</span>
+            <span class="o">&lt;</span><span class="err">/div&gt;</span>
+        <span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">withStyles</span><span class="p">(</span><span class="nx">styles</span><span class="p">)(</span><span class="nx">Main</span><span class="p">);</span>
+</pre></div>
+</td></tr></table>
+
+</details>
+<details class="note"><summary>Les props du composant ModalForm</summary><table>
+<thead>
+<tr>
+<th align="center">Props</th>
+<th align="center">Valeurs ou Types</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">modalStyle</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">objet</span></code></strong> ou <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">formStyle</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">objet</span></code></strong> ou <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">action</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">name</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">enctype</td>
+<td align="center"><strong><code class="codehilite"><span class="n">application</span><span class="o">/</span><span class="n">x</span><span class="o">-</span><span class="n">www</span><span class="o">-</span><span class="n">form</span><span class="o">-</span><span class="n">urlencoded</span></code></strong> ou <strong><code class="codehilite"><span class="n">multipart</span><span class="o">/</span><span class="n">form</span><span class="o">-</span><span class="k">data</span></code></strong> ou <strong><code class="codehilite"><span class="nb">text</span><span class="o">/</span><span class="n">plain</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">target</td>
+<td align="center"><strong><code class="codehilite"><span class="n">_self</span></code></strong> ou <strong><code class="codehilite"><span class="n">_parent</span></code></strong> ou <strong><code class="codehilite"><span class="n">_top</span></code></strong> ou <strong><code class="codehilite"><span class="n">_blank</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">acceptCharset</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">novalidate</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">booléen</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">autocomplete</td>
+<td align="center"><strong><code class="codehilite"><span class="k">on</span></code></strong> ou <strong><code class="codehilite"><span class="k">off</span></code></strong></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="button">Button</h2>
+<details class="note"><summary>Exemple</summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span><span class="nx">Component</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;react&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">Button</span> <span class="nx">from</span> <span class="s2">&quot;duidsystem-duidhtml/Button&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">withStyles</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@material-ui/styles&#39;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">styles</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">root</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;white&#39;</span><span class="p">,</span>
+    <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+
+
+<span class="kr">class</span> <span class="nx">Main</span> <span class="kr">extends</span> <span class="nx">Component</span><span class="p">{</span>
+
+    <span class="nx">render</span><span class="p">(){</span> 
+        <span class="kr">const</span> <span class="p">{</span><span class="nx">classes</span><span class="p">}</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">;</span>
+        <span class="k">return</span><span class="p">(</span>
+            <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">Button</span> 
+                     <span class="nx">style</span> <span class="o">=</span> <span class="p">{</span><span class="nx">classes</span><span class="p">.</span><span class="nx">root</span><span class="p">}</span>
+                <span class="o">&gt;</span>
+                    <span class="nx">duidhtml</span> <span class="nx">Button</span> 
+                <span class="o">&lt;</span><span class="err">/Button&gt;</span>
+            <span class="o">&lt;</span><span class="err">/div&gt;</span>
+        <span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">withStyles</span><span class="p">(</span><span class="nx">styles</span><span class="p">)(</span><span class="nx">Main</span><span class="p">);</span>
+</pre></div>
+</td></tr></table>
+
+</details>
+<details class="note"><summary>Les props du composant Button</summary><table>
+<thead>
+<tr>
+<th align="center">Props</th>
+<th align="center">Valeurs ou Types</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">style</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">objet</span></code></strong> ou <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">name</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">value</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">disabled</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">booléen</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">form</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">autofocus</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">booléen</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">formaction</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">formmethod</td>
+<td align="center"><strong><code class="codehilite"><span class="k">get</span></code></strong> ou <strong><code class="codehilite"><span class="n">post</span></code></strong> ou <strong><code class="codehilite"><span class="n">put</span></code></strong> ou <strong><code class="codehilite"><span class="k">delete</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">formenctype</td>
+<td align="center"><strong><code class="codehilite"><span class="n">application</span><span class="o">/</span><span class="n">x</span><span class="o">-</span><span class="n">www</span><span class="o">-</span><span class="n">form</span><span class="o">-</span><span class="n">urlencoded</span></code></strong> ou <strong><code class="codehilite"><span class="n">multipart</span><span class="o">/</span><span class="n">form</span><span class="o">-</span><span class="k">data</span></code></strong> ou <strong><code class="codehilite"><span class="nb">text</span><span class="o">/</span><span class="n">plain</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">formtarget</td>
+<td align="center"><strong><code class="codehilite"><span class="n">_self</span></code></strong> ou <strong><code class="codehilite"><span class="n">_parent</span></code></strong> ou <strong><code class="codehilite"><span class="n">_top</span></code></strong> ou <strong><code class="codehilite"><span class="n">_blank</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">acceptCharset</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">formnovalidate</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">booléen</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">autocomplete</td>
+<td align="center"><strong><code class="codehilite"><span class="k">on</span></code></strong> ou <strong><code class="codehilite"><span class="k">off</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">onClick</td>
+<td align="center">de type <strong><code class="codehilite"><span class="k">function</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">onBlur</td>
+<td align="center">de type <strong><code class="codehilite"><span class="k">function</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">onFocus</td>
+<td align="center">de type <strong><code class="codehilite"><span class="k">function</span></code></strong></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="buttonreset">ButtonReset</h2>
+<details class="note"><summary>Exemple</summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span><span class="nx">Component</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;react&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">ButtonReset</span> <span class="nx">from</span> <span class="s2">&quot;duidsystem-duidhtml/ButtonReset&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">withStyles</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@material-ui/styles&#39;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">styles</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">root</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;white&#39;</span><span class="p">,</span>
+    <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+
+
+<span class="kr">class</span> <span class="nx">Main</span> <span class="kr">extends</span> <span class="nx">Component</span><span class="p">{</span>
+
+    <span class="nx">render</span><span class="p">(){</span> 
+        <span class="kr">const</span> <span class="p">{</span><span class="nx">classes</span><span class="p">}</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">;</span>
+        <span class="k">return</span><span class="p">(</span>
+            <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">ButtonReset</span> 
+                     <span class="nx">style</span> <span class="o">=</span> <span class="p">{</span><span class="nx">classes</span><span class="p">.</span><span class="nx">root</span><span class="p">}</span>
+                <span class="o">&gt;</span>
+                    <span class="nx">duidhtml</span> <span class="nx">ButtonReset</span> 
+                <span class="o">&lt;</span><span class="err">/ButtonReset&gt;</span>
+            <span class="o">&lt;</span><span class="err">/div&gt;</span>
+        <span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">withStyles</span><span class="p">(</span><span class="nx">styles</span><span class="p">)(</span><span class="nx">Main</span><span class="p">);</span>
+</pre></div>
+</td></tr></table>
+
+</details>
+<details class="note"><summary>Les props du composant ButtonReset</summary><table>
+<thead>
+<tr>
+<th align="center">Props</th>
+<th align="center">Valeurs ou Types</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">style</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">objet</span></code></strong> ou <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">name</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">value</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">disabled</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">booléen</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">form</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">autofocus</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">booléen</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">formaction</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">formmethod</td>
+<td align="center"><strong><code class="codehilite"><span class="k">get</span></code></strong> ou <strong><code class="codehilite"><span class="n">post</span></code></strong> ou <strong><code class="codehilite"><span class="n">put</span></code></strong> ou <strong><code class="codehilite"><span class="k">delete</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">formenctype</td>
+<td align="center"><strong><code class="codehilite"><span class="n">application</span><span class="o">/</span><span class="n">x</span><span class="o">-</span><span class="n">www</span><span class="o">-</span><span class="n">form</span><span class="o">-</span><span class="n">urlencoded</span></code></strong> ou <strong><code class="codehilite"><span class="n">multipart</span><span class="o">/</span><span class="n">form</span><span class="o">-</span><span class="k">data</span></code></strong> ou <strong><code class="codehilite"><span class="nb">text</span><span class="o">/</span><span class="n">plain</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">formtarget</td>
+<td align="center"><strong><code class="codehilite"><span class="n">_self</span></code></strong> ou <strong><code class="codehilite"><span class="n">_parent</span></code></strong> ou <strong><code class="codehilite"><span class="n">_top</span></code></strong> ou <strong><code class="codehilite"><span class="n">_blank</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">acceptCharset</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">formnovalidate</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">booléen</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">autocomplete</td>
+<td align="center"><strong><code class="codehilite"><span class="k">on</span></code></strong> ou <strong><code class="codehilite"><span class="k">off</span></code></strong></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="buttonsubmit">ButtonSubmit</h2>
+<details class="note"><summary>Exemple</summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span><span class="nx">Component</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;react&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">ButtonSubmit</span> <span class="nx">from</span> <span class="s2">&quot;duidsystem-duidhtml/ButtonSubmit&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">withStyles</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@material-ui/styles&#39;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">styles</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">root</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;white&#39;</span><span class="p">,</span>
+    <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+
+
+<span class="kr">class</span> <span class="nx">Main</span> <span class="kr">extends</span> <span class="nx">Component</span><span class="p">{</span>
+
+    <span class="nx">render</span><span class="p">(){</span> 
+        <span class="kr">const</span> <span class="p">{</span><span class="nx">classes</span><span class="p">}</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">;</span>
+        <span class="k">return</span><span class="p">(</span>
+            <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">ButtonSubmit</span> 
+                     <span class="nx">style</span> <span class="o">=</span> <span class="p">{</span><span class="nx">classes</span><span class="p">.</span><span class="nx">root</span><span class="p">}</span>
+                <span class="o">&gt;</span>
+                    <span class="nx">duidhtml</span> <span class="nx">ButtonSubmit</span> 
+                <span class="o">&lt;</span><span class="err">/ButtonSubmit&gt;</span>
+            <span class="o">&lt;</span><span class="err">/div&gt;</span>
+        <span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">withStyles</span><span class="p">(</span><span class="nx">styles</span><span class="p">)(</span><span class="nx">Main</span><span class="p">);</span>
+</pre></div>
+</td></tr></table>
+
+</details>
+<details class="note"><summary>Les props du composant ButtonSubmit</summary><table>
+<thead>
+<tr>
+<th align="center">Props</th>
+<th align="center">Valeurs ou Types</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">style</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">objet</span></code></strong> ou <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">name</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">value</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">disabled</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">booléen</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">form</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">autofocus</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">booléen</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">formaction</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">formmethod</td>
+<td align="center"><strong><code class="codehilite"><span class="k">get</span></code></strong> ou <strong><code class="codehilite"><span class="n">post</span></code></strong> ou <strong><code class="codehilite"><span class="n">put</span></code></strong> ou <strong><code class="codehilite"><span class="k">delete</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">formenctype</td>
+<td align="center"><strong><code class="codehilite"><span class="n">application</span><span class="o">/</span><span class="n">x</span><span class="o">-</span><span class="n">www</span><span class="o">-</span><span class="n">form</span><span class="o">-</span><span class="n">urlencoded</span></code></strong> ou <strong><code class="codehilite"><span class="n">multipart</span><span class="o">/</span><span class="n">form</span><span class="o">-</span><span class="k">data</span></code></strong> ou <strong><code class="codehilite"><span class="nb">text</span><span class="o">/</span><span class="n">plain</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">formtarget</td>
+<td align="center"><strong><code class="codehilite"><span class="n">_self</span></code></strong> ou <strong><code class="codehilite"><span class="n">_parent</span></code></strong> ou <strong><code class="codehilite"><span class="n">_top</span></code></strong> ou <strong><code class="codehilite"><span class="n">_blank</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">acceptCharset</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">formnovalidate</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">booléen</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">autocomplete</td>
+<td align="center"><strong><code class="codehilite"><span class="k">on</span></code></strong> ou <strong><code class="codehilite"><span class="k">off</span></code></strong></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="dropdawdatalist">DropDawDatalist</h2>
+<details class="note"><summary>Exemple</summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span><span class="nx">Component</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;react&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">DropDawDatalist</span> <span class="nx">from</span> <span class="s2">&quot;duidsystem-duidhtml/DropDawDatalist&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">withStyles</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@material-ui/styles&#39;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">styles</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">input</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="nx">label</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+
+
+<span class="kr">class</span> <span class="nx">Main</span> <span class="kr">extends</span> <span class="nx">Component</span><span class="p">{</span>
+    <span class="nx">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">){</span>
+        <span class="kr">super</span><span class="p">(</span><span class="nx">props</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="o">=</span><span class="p">{</span>
+            <span class="nx">optionItems</span><span class="o">:</span><span class="p">[</span><span class="s2">&quot;math&quot;</span><span class="p">,</span><span class="s2">&quot;chimie&quot;</span><span class="p">,</span><span class="s2">&quot;physique&quot;</span><span class="p">,</span><span class="s2">&quot;histoire&quot;</span><span class="p">],</span>
+            <span class="nx">inputProps</span><span class="o">:</span><span class="p">{</span>
+                <span class="nx">list</span><span class="o">:</span><span class="s2">&quot;cours&quot;</span><span class="p">,</span>
+                <span class="nx">id</span><span class="o">:</span><span class="s2">&quot;forLabel&quot;</span><span class="p">,</span>
+            <span class="p">},</span>
+            <span class="nx">datalistProps</span><span class="o">:</span><span class="p">{</span>
+                <span class="nx">id</span><span class="o">:</span><span class="s2">&quot;cours&quot;</span>
+            <span class="p">},</span>
+            <span class="nx">labelProps</span><span class="o">:</span><span class="p">{</span>
+                <span class="nx">htmlFor</span><span class="o">:</span><span class="s2">&quot;forLabel&quot;</span><span class="p">,</span>
+                <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;mes cours &quot;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="nx">render</span><span class="p">(){</span> 
+        <span class="kr">const</span> <span class="p">{</span><span class="nx">classes</span><span class="p">}</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">;</span>
+        <span class="k">return</span><span class="p">(</span>
+            <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">DropDawDatalist</span>
+                    <span class="nx">labelProps</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">labelProps</span><span class="p">}</span>
+                    <span class="nx">optionItems</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">optionItems</span><span class="p">}</span>
+                    <span class="nx">inputProps</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">inputProps</span><span class="p">}</span>
+                    <span class="nx">datalistProps</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">datalistProps</span><span class="p">}</span> 
+                    <span class="nx">inputStyle</span> <span class="o">=</span> <span class="p">{</span><span class="nx">classes</span><span class="p">.</span><span class="nx">input</span><span class="p">}</span>
+                    <span class="nx">labelStyle</span> <span class="o">=</span> <span class="p">{</span><span class="nx">classes</span><span class="p">.</span><span class="nx">label</span><span class="p">}</span>
+                <span class="o">/&gt;</span>
+            <span class="o">&lt;</span><span class="err">/div&gt;</span>
+        <span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">withStyles</span><span class="p">(</span><span class="nx">styles</span><span class="p">)(</span><span class="nx">Main</span><span class="p">);</span>
+</pre></div>
+</td></tr></table>
+
+</details>
+<details class="note"><summary>Les props du composant DropDawDatalist</summary><table>
+<thead>
+<tr>
+<th align="center">Props</th>
+<th align="center">Valeurs ou Types</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">labelProps</td>
+<td align="center">un object de propriétés <strong><code class="codehilite"><span class="n">htmlFor</span></code></strong> et <strong><code class="codehilite"><span class="n">name</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">optionItems</td>
+<td align="center">une liste de  <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">inputProps</td>
+<td align="center">un object de propriétés <strong><code class="codehilite"><span class="n">list</span></code></strong> et <strong><code class="codehilite"><span class="n">id</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">datalistProps</td>
+<td align="center">un object de propriété <strong><code class="codehilite"><span class="n">id</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">inputStyle</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">objet</span></code></strong> ou <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">labelStyle</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">objet</span></code></strong> ou <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+</tbody>
+</table>
+<p>Le <code class="codehilite"><span class="n">id</span></code> dans <code class="codehilite"><span class="n">datalistProps</span></code> doit avoir la même valeur que le <code class="codehilite"><span class="n">list</span></code> dans <code class="codehilite"><span class="n">inputProps</span></code><br />
+Le <code class="codehilite"><span class="n">id</span></code> dans <code class="codehilite"><span class="n">inputProps</span></code> doit avoir la même valeur que le <code class="codehilite"><span class="n">htmlFor</span></code> dans <code class="codehilite"><span class="n">labelProps</span></code></p>
+</details>
+<h2 id="dropdawselect">DropDawSelect</h2>
+<details class="note"><summary>Exemple</summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span><span class="nx">Component</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;react&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">DropDawSelect</span><span class="p">,</span> <span class="nx">DuidStyle</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;duidsystem-duidhtml&quot;</span><span class="p">;</span>
+
+<span class="kr">class</span> <span class="nx">Main</span> <span class="kr">extends</span> <span class="nx">Component</span><span class="p">{</span>
+    <span class="nx">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">){</span>
+        <span class="kr">super</span><span class="p">(</span><span class="nx">props</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="o">=</span><span class="p">{</span>
+            <span class="nx">optionItems</span><span class="o">:</span><span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nx">value</span><span class="o">:</span><span class="s2">&quot;math&quot;</span><span class="p">,</span>
+                    <span class="nx">optionItemProps</span><span class="o">:</span><span class="p">{</span>
+                        <span class="nx">label</span><span class="o">:</span><span class="s2">&quot;math&quot;</span><span class="p">,</span>
+                        <span class="nx">disabled</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+                    <span class="p">}</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nx">value</span><span class="o">:</span><span class="s2">&quot;chimie&quot;</span><span class="p">,</span>
+                    <span class="nx">optionItemProps</span><span class="o">:</span><span class="p">{</span>
+                        <span class="nx">disabled</span><span class="o">:</span><span class="p">{</span><span class="kc">true</span><span class="o">:</span><span class="kc">true</span><span class="p">},</span>
+                    <span class="p">}</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nx">value</span><span class="o">:</span><span class="s2">&quot;physique&quot;</span><span class="p">,</span>
+                    <span class="nx">optionItemProps</span><span class="o">:</span><span class="p">{}</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nx">value</span><span class="o">:</span><span class="s2">&quot;histoire&quot;</span><span class="p">,</span>
+                    <span class="nx">optionItemProps</span><span class="o">:</span><span class="p">{}</span>
+                <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nx">selectProps</span><span class="o">:</span><span class="p">{</span>
+                <span class="nx">id</span><span class="o">:</span><span class="s2">&quot;cours&quot;</span>
+            <span class="p">},</span>
+            <span class="nx">labelProps</span><span class="o">:</span><span class="p">{</span>
+                <span class="nx">htmlFor</span><span class="o">:</span><span class="s2">&quot;cours&quot;</span><span class="p">,</span>
+                <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;mes cours &quot;</span><span class="p">,</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+
+    <span class="nx">render</span><span class="p">(){</span>
+        <span class="kr">const</span> <span class="p">{</span><span class="nx">classes</span><span class="p">}</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">;</span>
+        <span class="k">return</span><span class="p">(</span>
+            <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">DuidDropDawSelect</span> 
+                    <span class="nx">labelProps</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">labelProps</span><span class="p">}</span>
+                    <span class="nx">labelStyle</span><span class="o">=</span><span class="p">{</span><span class="nx">classes</span><span class="p">.</span><span class="nx">label</span><span class="p">}</span>
+                    <span class="nx">optionItems</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">optionItems</span><span class="p">}</span>
+                    <span class="nx">selectProps</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">selectProps</span><span class="p">}</span>
+                    <span class="nx">selectStyle</span><span class="o">=</span><span class="p">{</span><span class="nx">classes</span><span class="p">.</span><span class="nx">select</span><span class="p">}</span>
+                <span class="o">/&gt;</span> 
+                <span class="o">&lt;</span><span class="nx">DuidStyle</span><span class="o">&gt;</span><span class="p">{</span><span class="sb">`</span>
+<span class="sb">                .label{</span>
+<span class="sb">                    color: blue;</span>
+<span class="sb">                }</span>
+<span class="sb">                .select{</span>
+<span class="sb">                    color: green;</span>
+<span class="sb">                }</span>
+
+<span class="sb">            `</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/DuidStyle&gt;</span>
+            <span class="o">&lt;</span><span class="err">/div&gt;</span>
+        <span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">Main</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
+
+</details>
+<details class="note"><summary>Les props du composant DropDawSelect</summary><table>
+<thead>
+<tr>
+<th align="center">Props</th>
+<th align="center">Valeurs ou Types</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">labelProps</td>
+<td align="center">un object de propriétés <strong><code class="codehilite"><span class="n">htmlFor</span></code></strong> et <strong><code class="codehilite"><span class="n">name</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">optionItems</td>
+<td align="center">une liste de  <strong><code class="codehilite"><span class="k">object</span></code></strong> et chaque objet a <strong><code class="codehilite"><span class="n">value</span></code></strong> et <strong><code class="codehilite"><span class="n">optionItemProps</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">selectProps</td>
+<td align="center">un object de propriété <strong><code class="codehilite"><span class="n">id</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">selectStyle</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">objet</span></code></strong> ou <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">labelStyle</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">objet</span></code></strong> ou <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+</tbody>
+</table>
+<p>Le <code class="codehilite"><span class="n">id</span></code> dans <code class="codehilite"><span class="n">selectProps</span></code> doit avoir la même valeur que le <code class="codehilite"><span class="n">htmlFor</span></code> dans <code class="codehilite"><span class="n">labelProps</span></code></p>
+</details>
+<h2 id="dropdawselectgroup">DropDawSelectGroup</h2>
+<details class="note"><summary>Exemple</summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span><span class="nx">Component</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;react&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">DropDawSelectGroup</span> <span class="p">,</span> <span class="nx">DuidStyle</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;duidsystem-duidhtml&quot;</span><span class="p">;</span>
+
+<span class="kr">class</span> <span class="nx">Main</span> <span class="kr">extends</span> <span class="nx">Component</span><span class="p">{</span>
+    <span class="nx">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">){</span>
+        <span class="kr">super</span><span class="p">(</span><span class="nx">props</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="o">=</span><span class="p">{</span>
+            <span class="nx">optGroupItems</span><span class="o">:</span><span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nx">groupId</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+                    <span class="nx">groupProps</span><span class="o">:</span><span class="p">{</span>
+                        <span class="nx">label</span><span class="o">:</span><span class="s2">&quot;science&quot;</span><span class="p">,</span>
+                    <span class="p">},</span>
+                    <span class="nx">optItems</span><span class="o">:</span><span class="p">[</span>
+                        <span class="p">{</span>   
+                            <span class="nx">optId</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+                            <span class="nx">value</span><span class="o">:</span><span class="s2">&quot;math&quot;</span><span class="p">,</span>
+                            <span class="nx">optProps</span><span class="o">:</span><span class="p">{}</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nx">optId</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+                            <span class="nx">value</span><span class="o">:</span><span class="s2">&quot;chimie&quot;</span><span class="p">,</span>
+                            <span class="nx">optProps</span><span class="o">:</span><span class="p">{</span>
+                                <span class="nx">disabled</span><span class="o">:</span><span class="p">{</span><span class="kc">true</span><span class="o">:</span><span class="kc">true</span><span class="p">},</span>
+                            <span class="p">}</span>
+                        <span class="p">},</span>
+                    <span class="p">]</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nx">groupId</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+                    <span class="nx">groupProps</span><span class="o">:</span><span class="p">{</span>
+                        <span class="nx">label</span><span class="o">:</span><span class="s2">&quot;littérature&quot;</span><span class="p">,</span>
+                    <span class="p">},</span>
+                    <span class="nx">optItems</span><span class="o">:</span><span class="p">[</span>
+                        <span class="p">{</span>   
+                            <span class="nx">optId</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+                            <span class="nx">value</span><span class="o">:</span><span class="s2">&quot;français&quot;</span><span class="p">,</span>
+                            <span class="nx">optProps</span><span class="o">:</span><span class="p">{}</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nx">optId</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+                            <span class="nx">value</span><span class="o">:</span><span class="s2">&quot;anglais&quot;</span><span class="p">,</span>
+                            <span class="nx">optProps</span><span class="o">:</span><span class="p">{}</span>
+                        <span class="p">},</span>
+                    <span class="p">]</span>
+                <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nx">selectProps</span><span class="o">:</span><span class="p">{</span>
+                <span class="nx">name</span><span class="o">:</span><span class="s2">&quot;cours&quot;</span><span class="p">,</span>
+                <span class="nx">id</span><span class="o">:</span><span class="s2">&quot;cours&quot;</span>
+            <span class="p">},</span>
+            <span class="nx">labelProps</span><span class="o">:</span><span class="p">{</span>
+                <span class="nx">htmlFor</span><span class="o">:</span><span class="s2">&quot;cours&quot;</span><span class="p">,</span>
+                <span class="nx">name</span><span class="o">:</span><span class="s2">&quot;mes cours &quot;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+
+    <span class="nx">render</span><span class="p">(){</span>
+        <span class="kr">const</span> <span class="p">{</span><span class="nx">classes</span><span class="p">}</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">;</span>
+        <span class="k">return</span><span class="p">(</span>
+            <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">DropDawSelectGroup</span> 
+                    <span class="nx">labelProps</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">labelProps</span><span class="p">}</span>
+                    <span class="nx">labelStyle</span> <span class="o">=</span> <span class="s2">&quot;label&quot;</span>
+                    <span class="nx">optGroupItems</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">optGroupItems</span><span class="p">}</span>
+                    <span class="nx">selectProps</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">selectProps</span><span class="p">}</span>
+                    <span class="nx">selectStyle</span> <span class="o">=</span> <span class="s2">&quot;select&quot;</span>
+
+                <span class="o">/&gt;</span>  
+                <span class="o">&lt;</span><span class="nx">DuidStyle</span><span class="o">&gt;</span><span class="p">{</span><span class="sb">`</span>
+<span class="sb">                    .label{</span>
+<span class="sb">                        color: blue;</span>
+<span class="sb">                    }</span>
+<span class="sb">                    .select{</span>
+<span class="sb">                        color: green;</span>
+<span class="sb">                    }</span>
+
+<span class="sb">                `</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/DuidStyle&gt;</span>
+            <span class="o">&lt;</span><span class="err">/div&gt;</span>
+        <span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">Main</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
+
+</details>
+<details class="note"><summary>Les props du composant DropDawSelectGroup</summary><table>
+<thead>
+<tr>
+<th align="center">Props</th>
+<th align="center">Valeurs ou Types</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">labelProps</td>
+<td align="center">un object de propriétés <strong><code class="codehilite"><span class="n">htmlFor</span></code></strong> et <strong><code class="codehilite"><span class="n">name</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">optGroupItems</td>
+<td align="center">une liste de  <strong><code class="codehilite"><span class="k">object</span></code></strong> et chaque objet a <strong><code class="codehilite"><span class="n">groupId</span></code></strong>, <strong><code class="codehilite"><span class="n">groupProp</span></code></strong>, <strong><code class="codehilite"><span class="n">optItems</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">selectProps</td>
+<td align="center">un object de propriétés <strong><code class="codehilite"><span class="n">id</span></code></strong> et <strong><code class="codehilite"><span class="n">name</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">selectStyle</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">objet</span></code></strong> ou <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">labelStyle</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">objet</span></code></strong> ou <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+</tbody>
+</table>
+<p>Le <code class="codehilite"><span class="n">id</span></code> dans <code class="codehilite"><span class="n">selectProps</span></code> doit avoir la même valeur que le <code class="codehilite"><span class="n">htmlFor</span></code> dans <code class="codehilite"><span class="n">labelProps</span></code></p>
+</details>
+<h2 id="formfieldset">FormFieldset</h2>
+<details class="note"><summary>Exemple</summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span><span class="nx">Component</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;react&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">FormFieldset</span> <span class="p">,</span> <span class="nx">DuidStyle</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;duidsystem-duidhtml&quot;</span><span class="p">;</span>
+
+<span class="kr">class</span> <span class="nx">Main</span> <span class="kr">extends</span> <span class="nx">Component</span><span class="p">{</span>
+    <span class="nx">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">){</span>
+        <span class="kr">super</span><span class="p">(</span><span class="nx">props</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="o">=</span><span class="p">{</span>
+            <span class="nx">fieldsetProps</span><span class="o">:</span><span class="p">{</span>
+                <span class="nx">form</span><span class="o">:</span><span class="s2">&quot;&quot;</span>
+            <span class="p">},</span>
+            <span class="nx">legendProps</span><span class="o">:</span><span class="p">{</span>
+                <span class="nx">id</span><span class="o">:</span><span class="s2">&quot;&quot;</span>
+            <span class="p">},</span>
+            <span class="nx">legendTitle</span><span class="o">:</span><span class="s2">&quot;FormFieldset&quot;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+
+    <span class="nx">render</span><span class="p">(){</span>
+
+        <span class="k">return</span><span class="p">(</span>
+            <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">FormFieldset</span>
+                    <span class="nx">fieldsetStyle</span><span class="o">=</span><span class="s2">&quot;field&quot;</span>
+                    <span class="nx">fieldsetProps</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">fieldsetProps</span><span class="p">}</span>
+                    <span class="nx">legendStyle</span><span class="o">=</span><span class="s2">&quot;legend&quot;</span>
+                    <span class="nx">legendTitle</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">legendTitle</span><span class="p">}</span>
+                    <span class="nx">legendProps</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">legendProps</span><span class="p">}</span>
+                <span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="k">for</span> <span class="nx">test</span> <span class="nx">here</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+                <span class="o">&lt;</span><span class="err">/FormFieldset&gt;</span>
+                <span class="o">&lt;</span><span class="nx">DuidStyle</span><span class="o">&gt;</span><span class="p">{</span><span class="sb">`</span>
+<span class="sb">                    .field{</span>
+<span class="sb">                        color: blue;</span>
+<span class="sb">                    }</span>
+<span class="sb">                    .legend{</span>
+<span class="sb">                        color: green;</span>
+<span class="sb">                    }</span>
+
+<span class="sb">                `</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/DuidStyle&gt;</span>
+            <span class="o">&lt;</span><span class="err">/div&gt;</span>
+        <span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">Main</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
+
+</details>
+<details class="note"><summary>Les props du composant FormFieldset</summary><table>
+<thead>
+<tr>
+<th align="center">Props</th>
+<th align="center">Valeurs ou Types</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">fieldsetProps</td>
+<td align="center">un object de propriétés <strong><code class="codehilite"><span class="n">form</span></code></strong>, <strong><code class="codehilite"><span class="n">name</span></code></strong> et <strong><code class="codehilite"><span class="n">disabled</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">legendProps</td>
+<td align="center">un object de propriétés <strong><code class="codehilite"><span class="n">id</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">legendTitle</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">fieldsetStyle</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">objet</span></code></strong> ou <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">legendStyle</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">objet</span></code></strong> ou <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+</tbody>
+</table>
+<p><code class="codehilite"><span class="n">fieldsetProps</span></code> et <code class="codehilite"><span class="n">legendProps</span></code> doivent avoir au moins un attribut même si pas de valeur</p>
+</details>
+<h2 id="inputbutton">InputButton</h2>
+<details class="note"><summary>Exemple</summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span><span class="nx">Component</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;react&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">InputButton</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;duidsystem-duidhtml&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">withStyles</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@material-ui/styles&#39;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">styles</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">input</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kr">class</span> <span class="nx">Main</span> <span class="kr">extends</span> <span class="nx">Component</span><span class="p">{</span>
+    <span class="nx">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">){</span>
+        <span class="kr">super</span><span class="p">(</span><span class="nx">props</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="o">=</span><span class="p">{</span>
+            <span class="nx">name</span><span class="o">:</span><span class="s2">&quot;duidbtn&quot;</span><span class="p">,</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+
+    <span class="nx">render</span><span class="p">(){</span>
+        <span class="kr">const</span> <span class="p">{</span><span class="nx">classes</span><span class="p">}</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">;</span>
+        <span class="k">return</span><span class="p">(</span>
+            <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">InputButton</span>
+                        <span class="nx">name</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span>
+                        <span class="nx">style</span><span class="o">=</span><span class="p">{</span><span class="nx">classes</span><span class="p">.</span><span class="nx">input</span><span class="p">}</span>
+                <span class="o">/&gt;</span>
+
+            <span class="o">&lt;</span><span class="err">/div&gt;</span>
+        <span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">withStyles</span><span class="p">(</span><span class="nx">styles</span><span class="p">)(</span><span class="nx">Main</span><span class="p">);</span>
+</pre></div>
+</td></tr></table>
+
+</details>
+<details class="note"><summary>Les props du composant InputButton</summary><table>
+<thead>
+<tr>
+<th align="center">Props</th>
+<th align="center">Valeurs ou Types</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">onClick</td>
+<td align="center">de type <strong><code class="codehilite"><span class="k">function</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">onBlur</td>
+<td align="center">de type <strong><code class="codehilite"><span class="k">function</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">onFocus</td>
+<td align="center">de type <strong><code class="codehilite"><span class="k">function</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">onSubmit</td>
+<td align="center">de type <strong><code class="codehilite"><span class="k">function</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">name</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">form</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">disabled</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">booléen</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">autofocus</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">booléen</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">style</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">objet</span></code></strong> ou <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="inputcheckbox">InputCheckbox</h2>
+<details class="note"><summary>Exemple</summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span><span class="nx">Component</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;react&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">InputCheckbox</span><span class="p">,</span> <span class="nx">DuidStyle</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;duidsystem-duidhtml&quot;</span><span class="p">;</span>
+
+
+<span class="kr">class</span> <span class="nx">Main</span> <span class="kr">extends</span> <span class="nx">Component</span><span class="p">{</span>
+    <span class="nx">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">){</span>
+        <span class="kr">super</span><span class="p">(</span><span class="nx">props</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="o">=</span><span class="p">{</span>
+            <span class="nx">value</span><span class="o">:</span> <span class="s2">&quot;duid&quot;</span><span class="p">,</span>
+            <span class="nx">labelProps</span><span class="o">:</span><span class="p">{}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+
+    <span class="nx">render</span><span class="p">(){</span>
+        <span class="kr">const</span> <span class="p">{</span><span class="nx">classes</span><span class="p">}</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">;</span>
+        <span class="k">return</span><span class="p">(</span>
+            <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">InputCheckbox</span>
+                    <span class="nx">value</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">value</span><span class="p">}</span>
+                    <span class="nx">labelProps</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">labelProps</span><span class="p">}</span>
+                    <span class="nx">style</span><span class="o">=</span><span class="s2">&quot;checkbox&quot;</span>
+                <span class="o">/&gt;</span>
+                <span class="o">&lt;</span><span class="nx">DuidStyle</span><span class="o">&gt;</span><span class="p">{</span><span class="sb">`</span>
+<span class="sb">                    .checkbox{</span>
+<span class="sb">                        color: green;</span>
+<span class="sb">                    }</span>
+
+<span class="sb">                `</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/DuidStyle&gt;</span>
+            <span class="o">&lt;</span><span class="err">/div&gt;</span>
+        <span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">Main</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
+
+</details>
+<details class="note"><summary>Les props du composant InputButton</summary><table>
+<thead>
+<tr>
+<th align="center">Props</th>
+<th align="center">Valeurs ou Types</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">onClick</td>
+<td align="center">de type <strong><code class="codehilite"><span class="k">function</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">onBlur</td>
+<td align="center">de type <strong><code class="codehilite"><span class="k">function</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">onFocus</td>
+<td align="center">de type <strong><code class="codehilite"><span class="k">function</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">name</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">value</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">form</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">disabled</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">booléen</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">autofocus</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">booléen</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">style</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">objet</span></code></strong> ou <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">required</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">booléen</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">checked</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">booléen</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">labelProps</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">objet</span></code></strong></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="inputcolor">InputColor</h2>
+<details class="note"><summary>Exemple</summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span><span class="nx">Component</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;react&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">InputColor</span><span class="p">,</span> <span class="nx">DuidStyle</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;duidsystem-duidhtml&quot;</span><span class="p">;</span>
+
+
+<span class="kr">class</span> <span class="nx">Main</span> <span class="kr">extends</span> <span class="nx">Component</span><span class="p">{</span>
+    <span class="nx">constructor</span><span class="p">(</span><span class="nx">props</span><span class="p">){</span>
+        <span class="kr">super</span><span class="p">(</span><span class="nx">props</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="o">=</span><span class="p">{</span>
+            <span class="nx">colorTitle</span><span class="o">:</span> <span class="s2">&quot;duid input colors &quot;</span><span class="p">,</span>
+            <span class="nx">labelProps</span><span class="o">:</span><span class="p">{</span>
+                <span class="nx">htmlFor</span><span class="o">:</span><span class="s2">&quot;color&quot;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+
+    <span class="nx">render</span><span class="p">(){</span>
+
+        <span class="k">return</span><span class="p">(</span>
+            <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">InputColor</span>
+                    <span class="nx">colorTitle</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">colorTitle</span><span class="p">}</span>
+                    <span class="nx">style</span><span class="o">=</span><span class="s2">&quot;color&quot;</span>
+                    <span class="nx">labelProps</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">labelProps</span><span class="p">}</span>
+                <span class="o">/&gt;</span>
+                <span class="o">&lt;</span><span class="nx">DuidStyle</span><span class="o">&gt;</span><span class="p">{</span><span class="sb">`</span>
+<span class="sb">                    .color{</span>
+<span class="sb">                        color: green;</span>
+<span class="sb">                    }</span>
+
+<span class="sb">                `</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/DuidStyle&gt;</span>
+            <span class="o">&lt;</span><span class="err">/div&gt;</span>
+        <span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">Main</span><span class="p">;</span>
+</pre></div>
+</td></tr></table>
+
+</details>
+<details class="note"><summary>Les props du composant InputColor</summary><table>
+<thead>
+<tr>
+<th align="center">Props</th>
+<th align="center">Valeurs ou Types</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">name</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">value</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">form</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">disabled</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">booléen</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">autofocus</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">booléen</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">style</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">objet</span></code></strong> ou <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">list</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">string</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">colorTitle</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">String</span></code></strong></td>
+</tr>
+<tr>
+<td align="center">labelProps</td>
+<td align="center">de type <strong><code class="codehilite"><span class="n">objet</span></code></strong></td>
+</tr>
+</tbody>
+</table>
+</details></article></div></div></main><footer class="md-footer"><div class="md-footer-nav"><nav class="md-footer-nav__inner md-grid"><a href="../.." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev"><div class="md-flex__cell md-flex__cell--shrink"><i class="md-icon md-icon--arrow-back md-footer-nav__button"></i></div><div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span class="md-flex__ellipsis"><span class="md-footer-nav__direction">Précédent</span>Home</span></div></a><a href="../../duidModels/formContainers/" title="FormContainers" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next"><div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span class="md-flex__ellipsis"><span class="md-footer-nav__direction">Suivant</span>FormContainers</span></div><div class="md-flex__cell md-flex__cell--shrink"><i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i></div></a></nav></div><div class="md-footer-meta md-typeset"><div class="md-footer-meta__inner md-grid"><div class="md-footer-copyright">powered by <a href="https://www.mkdocs.org">MkDocs</a> and <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a></div></div></div></footer></div><script src="../../assets/javascripts/application.b260a35d.js"></script><script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script><script src="../../assets/javascripts/lunr/lunr.fr.js"></script><script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script></body></html>

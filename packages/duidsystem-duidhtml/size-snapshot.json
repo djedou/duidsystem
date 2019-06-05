@@ -1,0 +1,12 @@
+{
+  "build/umd/duidsystem-DuidHtml.production.min.js": {
+    "bundled": 19175,
+    "minified": 8159,
+    "gzipped": 2979
+  },
+  "build/umd/duidsystem-duidhtml.production.min.js": {
+    "bundled": 30855,
+    "minified": 14286,
+    "gzipped": 3905
+  }
+}
