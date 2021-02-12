@@ -1,0 +1,43 @@
+{
+  "name": "duidsystem",
+  "version": "1.0.8",
+  "private": false,
+  "description": "duidSystem is a customizable component library to build faster, beautiful, and more accessible React applications",
+  "homepage": "https://djedou.github.io/duidsystem/",
+  "keywords": [
+    "react",
+    "react-component",
+    "duidsystem"
+  ],
+  "author": "Djedou Arnaud AMAN",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/djedou/duidsystem.git",
+    "directory": "packages/duidsystem"
+  },
+  "bugs": {
+    "url": "https://github.com/djedou/duidsystem/issues"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.4.5",
+    "@material-ui/styles": "^4.11.3",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "main": "./index.js",
+  "module": "./esm/index.js"
+}

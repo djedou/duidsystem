@@ -28,18 +28,38 @@ async function createModulePackages({ from, to }) {
   const directoryPackages = glob.sync('*/index.js', { cwd: from }).map(path.dirname);
 
   await Promise.all(
-    directoryPackages.map(async directoryPackage => {
+    directoryPackages.map(async (directoryPackage) => {
       const packageJson = {
         sideEffects: false,
-        module: path.join('../esm', directoryPackage, 'index.js'),
+        module: path.join('../esm', directoryPackage, 'index.js')
       };
       const packageJsonPath = path.join(to, directoryPackage, 'package.json');
+
+      const [typingsExist] = await Promise.all([
+        fse.access(path.join(to, directoryPackage)),
+        fse.writeFile(packageJsonPath, JSON.stringify(packageJson, null, 2)),
+      ]);
+
+      /*if (!typingsExist) {
+        throw new Error(`index.d.ts for ${directoryPackage} is missing`);
+      }*/
 
       return packageJsonPath;
     }),
   );
 }
+/*
+async function typescriptCopy({ from, to }) {
+  if (!(await fse.access(to))) {
+    console.warn(`path ${to} does not exists`);
+    return [];
+  }
 
+  const files = glob.sync('/*.d.ts', { cwd: from });
+  const cmds = files.map((file) => fse.copy(path.resolve(from, file), path.resolve(to, file)));
+  return Promise.all(cmds);
+}
+*/
 async function createPackageFile() {
   const packageData = await fse.readFile(path.resolve(packagePath, './package.json'), 'utf8');
   const { nyc, scripts, devDependencies, workspaces, ...packageDataOther } = JSON.parse(
@@ -50,6 +70,7 @@ async function createPackageFile() {
     private: false,
     main: './index.js',
     module: './esm/index.js',
+    //typings: './index.d.ts',
   };
   const targetPath = path.resolve(buildPath, './package.json');
 
@@ -65,7 +86,7 @@ async function prepend(file, string) {
 }
 
 async function addLicense(packageData) {
-  const license = `/** @license Material-UI v${packageData.version}
+  const license = `/** @license DuidSystem v${packageData.version}
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -75,9 +96,9 @@ async function addLicense(packageData) {
     [
       './index.js',
       './esm/index.js',
-      './umd/duidsystem-duidhtml.development.js',
-      './umd/duidsystem-duidhtml.production.min.js',
-    ].map(async file => {
+      './umd/duidsystem.development.js',
+      './umd/duidsystem.production.min.js',
+    ].map(async (file) => {
       try {
         await prepend(path.resolve(buildPath, file), license);
       } catch (err) {
@@ -98,16 +119,16 @@ async function run() {
     await Promise.all(
       [
         // use enhanced readme from workspace root for `@material-ui/core`
-        packageData.name === 'duidsystem-duidhtml' ? '../../README.md' : './README.md',
+        packageData.name === 'duidsystem' ? '../../README.md' : './README.md',
         '../../CHANGELOG.md',
         '../../LICENSE',
-      ].map(file => includeFileInBuild(file)),
+      ].map((file) => includeFileInBuild(file)),
     );
 
     await addLicense(packageData);
 
     // TypeScript
-   /*  await typescriptCopy({ from: srcPath, to: buildPath }); */
+    //await typescriptCopy({ from: srcPath, to: buildPath });
 
     await createModulePackages({ from: srcPath, to: buildPath });
   } catch (err) {

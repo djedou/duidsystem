@@ -1,1 +1,6 @@
 node_modules
+package-lock.json
+packages/duidsystem/node_modules
+packages/duidsystem-duidhtml/node_modules
+packages/duidsystem/package-lock.json
+packages/duidsystem-duidhtml/package-lock.json
