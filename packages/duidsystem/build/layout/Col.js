@@ -65,6 +65,7 @@ var Col = function Col(props) {
     var prefix = 'col';
     var classesValue = [];
     var spans = [];
+    delete resProps["as"];
     classesProps.forEach(function (brkPoint) {
       var propValue = resProps[brkPoint];
       delete resProps[brkPoint];

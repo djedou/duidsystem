@@ -31,6 +31,7 @@ const Col = props => {
     const prefix = 'col';
     const classesValue = [];
     const spans = [];
+    delete resProps["as"];
     classesProps.forEach(brkPoint => {
       const propValue = resProps[brkPoint];
       delete resProps[brkPoint];

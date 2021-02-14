@@ -1,0 +1,1524 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+    
+    
+      
+        <title>Col - Djedou UI Design System</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.cb6bc1d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.39b8e14a.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="blue">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#col" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="Djedou UI Design System" class="md-header-nav__button md-logo" aria-label="Djedou UI Design System">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            Djedou UI Design System
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Col
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Djedou UI Design System" class="md-nav__button md-logo" aria-label="Djedou UI Design System">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Djedou UI Design System
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      
+      <label class="md-nav__link" for="nav-2">
+        Layout
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Layout" data-md-level="1">
+        <label class="md-nav__title" for="nav-2">
+          <span class="md-nav__icon md-icon"></span>
+          Layout
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../container/" class="md-nav__link">
+        Container
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../row/" class="md-nav__link">
+        Row
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Col
+      </a>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+      
+      <label class="md-nav__link" for="nav-3">
+        Components
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Components" data-md-level="1">
+        <label class="md-nav__title" for="nav-3">
+          <span class="md-nav__icon md-icon"></span>
+          Components
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/buttons/" class="md-nav__link">
+        Buttons
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="col">Col</h1>
+<p>The <code>Col</code> component lets you specify column widths across 6 breakpoint sizes (<code>xs</code>, <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, and <code>xxl</code>).<br />
+For every breakpoint, you can specify the amount of columns to span.</p>
+<details class="note"><summary>Col Props</summary><table>
+<thead>
+<tr>
+<th align="center">Props</th>
+<th align="center">Types</th>
+<th align="center">Descriptions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">styles</td>
+<td align="center"><strong><code>objet</code></strong></td>
+<td align="center">provide a customed style object to add a new style or override exist one</td>
+</tr>
+<tr>
+<td align="center">classes</td>
+<td align="center"><strong><code>array of string</code></strong></td>
+<td align="center">specify the classes name</td>
+</tr>
+<tr>
+<td align="center">xs</td>
+<td align="center"><strong><code>number(1-12)</code></strong> or <strong><code>auto</code></strong> or <strong><code>{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number }</code></strong></td>
+<td align="center">The number of columns to span on extra small devices (&lt;5712px)</td>
+</tr>
+<tr>
+<td align="center">sm</td>
+<td align="center"><strong><code>number(1-12)</code></strong> or <strong><code>auto</code></strong> or <strong><code>{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number }</code></strong></td>
+<td align="center">The number of columns to span on small devices (≥5712px)</td>
+</tr>
+<tr>
+<td align="center">md</td>
+<td align="center"><strong><code>number(1-12)</code></strong> or <strong><code>auto</code></strong> or <strong><code>{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number }</code></strong></td>
+<td align="center">The number of columns to span on medium devices (≥7128px)</td>
+</tr>
+<tr>
+<td align="center">lg</td>
+<td align="center"><strong><code>number(1-12)</code></strong> or <strong><code>auto</code></strong> or <strong><code>{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number }</code></strong></td>
+<td align="center">The number of columns to span on large devices (≥992px)</td>
+</tr>
+<tr>
+<td align="center">xl</td>
+<td align="center"><strong><code>number(1-12)</code></strong> or <strong><code>auto</code></strong> or <strong><code>{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number }</code></strong></td>
+<td align="center">The number of columns to span on extra large devices (≥1200px)</td>
+</tr>
+<tr>
+<td align="center">xxl</td>
+<td align="center"><strong><code>number(1-12)</code></strong> or <strong><code>auto</code></strong> or <strong><code>{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number }</code></strong></td>
+<td align="center">The number of columns to span on extra large devices (≥1400px)</td>
+</tr>
+<tr>
+<td align="center">span</td>
+<td align="center"><strong><code>true</code></strong> or <strong><code>false</code></strong></td>
+<td align="center">should span or not</td>
+</tr>
+<tr>
+<td align="center">col</td>
+<td align="center"></td>
+<td align="center">a default class for col component that can be override. Activated if span="true"</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="note"><summary>Col predefined Classes</summary><table>
+<thead>
+<tr>
+<th align="center">Class Name</th>
+<th align="center">Size</th>
+<th align="center">number of columns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">col_auto</td>
+<td align="center">xs</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">col_1</td>
+<td align="center">xs</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">col_2</td>
+<td align="center">xs</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">col_3</td>
+<td align="center">xs</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">col_4</td>
+<td align="center">xs</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">col_5</td>
+<td align="center">xs</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">col_6</td>
+<td align="center">xs</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">col_7</td>
+<td align="center">xs</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center">col_8</td>
+<td align="center">xs</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">col_9</td>
+<td align="center">xs</td>
+<td align="center">9</td>
+</tr>
+<tr>
+<td align="center">col_10</td>
+<td align="center">xs</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">col_11</td>
+<td align="center">xs</td>
+<td align="center">11</td>
+</tr>
+<tr>
+<td align="center">col_12</td>
+<td align="center">xs</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td align="center">offset_1</td>
+<td align="center">xs</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">offset_2</td>
+<td align="center">xs</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">offset_3</td>
+<td align="center">xs</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">offset_4</td>
+<td align="center">xs</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">offset_5</td>
+<td align="center">xs</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">offset_6</td>
+<td align="center">xs</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">offset_7</td>
+<td align="center">xs</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center">offset_8</td>
+<td align="center">xs</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">offset_9</td>
+<td align="center">xs</td>
+<td align="center">9</td>
+</tr>
+<tr>
+<td align="center">offset_10</td>
+<td align="center">xs</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">offset_11</td>
+<td align="center">xs</td>
+<td align="center">11</td>
+</tr>
+<tr>
+<td align="center">order_first</td>
+<td align="center">xs</td>
+<td align="center">first</td>
+</tr>
+<tr>
+<td align="center">order_0</td>
+<td align="center">xs</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">order_1</td>
+<td align="center">xs</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">order_2</td>
+<td align="center">xs</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">order_3</td>
+<td align="center">xs</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">order_4</td>
+<td align="center">xs</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">order_5</td>
+<td align="center">xs</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">order_last</td>
+<td align="center">xs</td>
+<td align="center">last</td>
+</tr>
+<tr>
+<td align="center">col_sm</td>
+<td align="center">sm</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">col_sm_auto</td>
+<td align="center">sm</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">col_sm_1</td>
+<td align="center">sm</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">col_sm_2</td>
+<td align="center">sm</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">col_sm_3</td>
+<td align="center">sm</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">col_sm_4</td>
+<td align="center">sm</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">col_sm_5</td>
+<td align="center">sm</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">col_sm_6</td>
+<td align="center">sm</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">col_sm_7</td>
+<td align="center">sm</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center">col_sm_8</td>
+<td align="center">sm</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">col_sm_9</td>
+<td align="center">sm</td>
+<td align="center">9</td>
+</tr>
+<tr>
+<td align="center">col_sm_10</td>
+<td align="center">sm</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">col_sm_11</td>
+<td align="center">sm</td>
+<td align="center">11</td>
+</tr>
+<tr>
+<td align="center">col_sm_12</td>
+<td align="center">sm</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td align="center">offset_sm_1</td>
+<td align="center">sm</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">offset_sm_2</td>
+<td align="center">sm</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">offset_sm_3</td>
+<td align="center">sm</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">offset_sm_4</td>
+<td align="center">sm</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">offset_sm_5</td>
+<td align="center">sm</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">offset_sm_6</td>
+<td align="center">sm</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">offset_sm_7</td>
+<td align="center">sm</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center">offset_sm_8</td>
+<td align="center">sm</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">offset_sm_9</td>
+<td align="center">sm</td>
+<td align="center">9</td>
+</tr>
+<tr>
+<td align="center">offset_sm_10</td>
+<td align="center">sm</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">offset_sm_11</td>
+<td align="center">sm</td>
+<td align="center">11</td>
+</tr>
+<tr>
+<td align="center">order_sm_first</td>
+<td align="center">sm</td>
+<td align="center">first</td>
+</tr>
+<tr>
+<td align="center">order_sm_0</td>
+<td align="center">sm</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">order_sm_1</td>
+<td align="center">sm</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">order_sm_2</td>
+<td align="center">sm</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">order_sm_3</td>
+<td align="center">sm</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">order_sm_4</td>
+<td align="center">sm</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">order_sm_5</td>
+<td align="center">sm</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">order_sm_last</td>
+<td align="center">sm</td>
+<td align="center">last</td>
+</tr>
+<tr>
+<td align="center">col_md</td>
+<td align="center">md</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">col_md_auto</td>
+<td align="center">md</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">col_md_1</td>
+<td align="center">md</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">col_md_2</td>
+<td align="center">md</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">col_md_3</td>
+<td align="center">md</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">col_md_4</td>
+<td align="center">md</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">col_md_5</td>
+<td align="center">md</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">col_md_6</td>
+<td align="center">md</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">col_md_7</td>
+<td align="center">md</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center">col_md_8</td>
+<td align="center">md</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">col_md_9</td>
+<td align="center">md</td>
+<td align="center">9</td>
+</tr>
+<tr>
+<td align="center">col_md_10</td>
+<td align="center">md</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">col_md_11</td>
+<td align="center">md</td>
+<td align="center">11</td>
+</tr>
+<tr>
+<td align="center">col_md_12</td>
+<td align="center">md</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td align="center">offset_md_1</td>
+<td align="center">md</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">offset_md_2</td>
+<td align="center">md</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">offset_md_3</td>
+<td align="center">md</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">offset_md_4</td>
+<td align="center">md</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">offset_md_5</td>
+<td align="center">md</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">offset_md_6</td>
+<td align="center">md</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">offset_md_7</td>
+<td align="center">md</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center">offset_md_8</td>
+<td align="center">md</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">offset_md_9</td>
+<td align="center">md</td>
+<td align="center">9</td>
+</tr>
+<tr>
+<td align="center">offset_md_10</td>
+<td align="center">md</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">offset_md_11</td>
+<td align="center">md</td>
+<td align="center">11</td>
+</tr>
+<tr>
+<td align="center">order_md_first</td>
+<td align="center">md</td>
+<td align="center">first</td>
+</tr>
+<tr>
+<td align="center">order_md_0</td>
+<td align="center">md</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">order_md_1</td>
+<td align="center">md</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">order_md_2</td>
+<td align="center">md</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">order_md_3</td>
+<td align="center">md</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">order_md_4</td>
+<td align="center">md</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">order_md_5</td>
+<td align="center">md</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">order_md_last</td>
+<td align="center">md</td>
+<td align="center">last</td>
+</tr>
+<tr>
+<td align="center">col_lg</td>
+<td align="center">lg</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">col_lg_auto</td>
+<td align="center">lg</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">col_lg_1</td>
+<td align="center">lg</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">col_lg_2</td>
+<td align="center">lg</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">col_lg_3</td>
+<td align="center">lg</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">col_lg_4</td>
+<td align="center">lg</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">col_lg_5</td>
+<td align="center">lg</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">col_lg_6</td>
+<td align="center">lg</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">col_lg_7</td>
+<td align="center">lg</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center">col_lg_8</td>
+<td align="center">lg</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">col_lg_9</td>
+<td align="center">lg</td>
+<td align="center">9</td>
+</tr>
+<tr>
+<td align="center">col_lg_10</td>
+<td align="center">lg</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">col_lg_11</td>
+<td align="center">lg</td>
+<td align="center">11</td>
+</tr>
+<tr>
+<td align="center">col_lg_12</td>
+<td align="center">lg</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td align="center">offset_lg_1</td>
+<td align="center">lg</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">offset_lg_2</td>
+<td align="center">lg</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">offset_lg_3</td>
+<td align="center">lg</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">offset_lg_4</td>
+<td align="center">lg</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">offset_lg_5</td>
+<td align="center">lg</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">offset_lg_6</td>
+<td align="center">lg</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">offset_lg_7</td>
+<td align="center">lg</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center">offset_lg_8</td>
+<td align="center">lg</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">offset_lg_9</td>
+<td align="center">lg</td>
+<td align="center">9</td>
+</tr>
+<tr>
+<td align="center">offset_lg_10</td>
+<td align="center">lg</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">offset_lg_11</td>
+<td align="center">lg</td>
+<td align="center">11</td>
+</tr>
+<tr>
+<td align="center">order_lg_first</td>
+<td align="center">lg</td>
+<td align="center">first</td>
+</tr>
+<tr>
+<td align="center">order_lg_0</td>
+<td align="center">lg</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">order_lg_1</td>
+<td align="center">lg</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">order_lg_2</td>
+<td align="center">lg</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">order_lg_3</td>
+<td align="center">lg</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">order_lg_4</td>
+<td align="center">lg</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">order_lg_5</td>
+<td align="center">lg</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">order_lg_last</td>
+<td align="center">lg</td>
+<td align="center">last</td>
+</tr>
+<tr>
+<td align="center">col_xl</td>
+<td align="center">xl</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">col_xl_auto</td>
+<td align="center">xl</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">col_xl_1</td>
+<td align="center">xl</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">col_xl_2</td>
+<td align="center">xl</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">col_xl_3</td>
+<td align="center">xl</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">col_xl_4</td>
+<td align="center">xl</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">col_xl_5</td>
+<td align="center">xl</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">col_xl_6</td>
+<td align="center">xl</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">col_xl_7</td>
+<td align="center">xl</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center">col_xl_8</td>
+<td align="center">xl</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">col_xl_9</td>
+<td align="center">xl</td>
+<td align="center">9</td>
+</tr>
+<tr>
+<td align="center">col_xl_10</td>
+<td align="center">xl</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">col_xl_11</td>
+<td align="center">xl</td>
+<td align="center">11</td>
+</tr>
+<tr>
+<td align="center">col_xl_12</td>
+<td align="center">xl</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td align="center">offset_xl_1</td>
+<td align="center">xl</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">offset_xl_2</td>
+<td align="center">xl</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">offset_xl_3</td>
+<td align="center">xl</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">offset_xl_4</td>
+<td align="center">xl</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">offset_xl_5</td>
+<td align="center">xl</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">offset_xl_6</td>
+<td align="center">xl</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">offset_xl_7</td>
+<td align="center">xl</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center">offset_xl_8</td>
+<td align="center">xl</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">offset_xl_9</td>
+<td align="center">xl</td>
+<td align="center">9</td>
+</tr>
+<tr>
+<td align="center">offset_xl_10</td>
+<td align="center">xl</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">offset_xl_11</td>
+<td align="center">xl</td>
+<td align="center">11</td>
+</tr>
+<tr>
+<td align="center">order_xl_first</td>
+<td align="center">xl</td>
+<td align="center">first</td>
+</tr>
+<tr>
+<td align="center">order_xl_0</td>
+<td align="center">xl</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">order_xl_1</td>
+<td align="center">xl</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">order_xl_2</td>
+<td align="center">xl</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">order_xl_3</td>
+<td align="center">xl</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">order_xl_4</td>
+<td align="center">xl</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">order_xl_5</td>
+<td align="center">xl</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">order_xl_last</td>
+<td align="center">xl</td>
+<td align="center">last</td>
+</tr>
+<tr>
+<td align="center">col_xxl</td>
+<td align="center">xxl</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">col_xxl_auto</td>
+<td align="center">xxl</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">col_xxl_1</td>
+<td align="center">xxl</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">col_xxl_2</td>
+<td align="center">xxl</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">col_xxl_3</td>
+<td align="center">xxl</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">col_xxl_4</td>
+<td align="center">xxl</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">col_xxl_5</td>
+<td align="center">xxl</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">col_xxl_6</td>
+<td align="center">xxl</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">col_xxl_7</td>
+<td align="center">xxl</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center">col_xxl_8</td>
+<td align="center">xxl</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">col_xxl_9</td>
+<td align="center">xxl</td>
+<td align="center">9</td>
+</tr>
+<tr>
+<td align="center">col_xxl_10</td>
+<td align="center">xxl</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">col_xxl_11</td>
+<td align="center">xxl</td>
+<td align="center">11</td>
+</tr>
+<tr>
+<td align="center">col_xxl_12</td>
+<td align="center">xxl</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td align="center">offset_xxl_1</td>
+<td align="center">xxl</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">offset_xxl_2</td>
+<td align="center">xxl</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">offset_xxl_3</td>
+<td align="center">xxl</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">offset_xxl_4</td>
+<td align="center">xxl</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">offset_xxl_5</td>
+<td align="center">xxl</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">offset_xxl_6</td>
+<td align="center">xxl</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">offset_xxl_7</td>
+<td align="center">xxl</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center">offset_xxl_8</td>
+<td align="center">xxl</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">offset_xxl_9</td>
+<td align="center">xxl</td>
+<td align="center">9</td>
+</tr>
+<tr>
+<td align="center">offset_xxl_10</td>
+<td align="center">xxl</td>
+<td align="center">10</td>
+</tr>
+<tr>
+<td align="center">offset_xxl_11</td>
+<td align="center">xxl</td>
+<td align="center">11</td>
+</tr>
+<tr>
+<td align="center">order_xxl_first</td>
+<td align="center">xxl</td>
+<td align="center">first</td>
+</tr>
+<tr>
+<td align="center">order_xxl_0</td>
+<td align="center">xxl</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">order_xxl_1</td>
+<td align="center">xxl</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">order_xxl_2</td>
+<td align="center">xxl</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">order_xxl_3</td>
+<td align="center">xxl</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">order_xxl_4</td>
+<td align="center">xxl</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">order_xxl_5</td>
+<td align="center">xxl</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">order_xxl_last</td>
+<td align="center">xxl</td>
+<td align="center">last</td>
+</tr>
+<tr>
+<td align="center">col</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="note"><summary>Exemple</summary><div class="highlight"><pre><span></span><code>    <span class="k">import</span> <span class="p">{</span> <span class="nx">Container</span><span class="p">,</span> <span class="nx">Row</span><span class="p">,</span> <span class="nx">Col</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;duidsystem/layout&#39;</span><span class="p">;</span>
+
+    <span class="kd">function</span> <span class="nx">Comp</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="p">(</span>
+            <span class="o">&lt;</span><span class="nx">Container</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">Row</span><span class="o">&gt;</span>
+                    <span class="o">&lt;</span><span class="nx">Col</span> <span class="nx">md</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;auto&#39;</span><span class="p">}</span> <span class="nx">sm</span><span class="o">=</span><span class="p">{</span><span class="mf">3</span><span class="p">}</span><span class="o">&gt;</span>
+                        <span class="nx">Aman</span>
+                    <span class="o">&lt;</span><span class="err">/Col&gt;</span>
+                <span class="o">&lt;</span><span class="err">/Row&gt;</span>
+                <span class="o">&lt;</span><span class="nx">Row</span><span class="o">&gt;</span>
+                    <span class="o">&lt;</span><span class="nx">Col</span> <span class="nx">styles</span><span class="o">=</span><span class="p">{</span><span class="nx">colStyles</span><span class="p">}</span> <span class="nx">classes</span><span class="o">=</span><span class="p">{[</span><span class="s2">&quot;col_sm_8&quot;</span><span class="p">]}</span> <span class="nx">sm</span><span class="o">=</span><span class="p">{</span><span class="mf">8</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">sm</span><span class="o">=</span><span class="mf">8</span><span class="o">&lt;</span><span class="err">/Col&gt;</span>
+                    <span class="o">&lt;</span><span class="nx">Col</span> <span class="nx">sm</span><span class="o">=</span><span class="p">{</span><span class="mf">4</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">sm</span><span class="o">=</span><span class="mf">4</span><span class="o">&lt;</span><span class="err">/Col&gt;</span>
+                <span class="o">&lt;</span><span class="err">/Row&gt;</span>
+                <span class="o">&lt;</span><span class="nx">Row</span><span class="o">&gt;</span>
+                    <span class="o">&lt;</span><span class="nx">Col</span> <span class="nx">sm</span><span class="o">&gt;</span><span class="nx">sm</span><span class="o">=</span><span class="kc">true</span><span class="o">&lt;</span><span class="err">/Col&gt;</span>
+                    <span class="o">&lt;</span><span class="nx">Col</span> <span class="nx">sm</span><span class="o">&gt;</span><span class="nx">sm</span><span class="o">=</span><span class="kc">true</span><span class="o">&lt;</span><span class="err">/Col&gt;</span>
+                    <span class="o">&lt;</span><span class="nx">Col</span> <span class="nx">sm</span><span class="o">&gt;</span><span class="nx">sm</span><span class="o">=</span><span class="kc">true</span><span class="o">&lt;</span><span class="err">/Col&gt;</span>
+                <span class="o">&lt;</span><span class="err">/Row&gt;</span>
+                <span class="o">&lt;</span><span class="nx">Row</span><span class="o">&gt;</span>
+                    <span class="o">&lt;</span><span class="nx">Col</span> <span class="nx">span</span><span class="o">=</span><span class="s2">&quot;true&quot;</span><span class="o">&gt;</span><span class="nx">span</span><span class="o">&lt;</span><span class="err">/Col&gt;</span>
+                    <span class="o">&lt;</span><span class="nx">Col</span> <span class="nx">span</span><span class="o">=</span><span class="s2">&quot;true&quot;</span><span class="o">&gt;</span><span class="nx">span</span><span class="o">&lt;</span><span class="err">/Col&gt;</span>
+                    <span class="o">&lt;</span><span class="nx">Col</span> <span class="nx">span</span><span class="o">=</span><span class="s2">&quot;true&quot;</span><span class="o">&gt;</span><span class="nx">span</span><span class="o">&lt;</span><span class="err">/Col&gt;</span>
+                <span class="o">&lt;</span><span class="err">/Row&gt;</span>
+            <span class="o">&lt;</span><span class="err">/Container&gt;</span>
+        <span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">const</span> <span class="nx">colStyles</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="nx">col_sm_8</span><span class="o">:</span> <span class="p">{</span>
+            <span class="s1">&#39;@media (min-width: 576px)&#39;</span><span class="o">:</span> <span class="p">{</span>
+                <span class="nx">display</span><span class="o">:</span> <span class="s1">&#39;flex&#39;</span><span class="p">,</span>
+                <span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span>
+                <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span>
+                <span class="nx">justifyContent</span><span class="o">:</span> <span class="s1">&#39;center&#39;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">export</span> <span class="k">default</span> <span class="nx">Comp</span><span class="p">;</span>
+</code></pre></div>
+</details>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../row/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Précédent
+                </span>
+                Row
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../../components/buttons/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Suivant
+                </span>
+                Buttons
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.994580cf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.9c0e82ba.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
