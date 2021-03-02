@@ -1,4 +1,4 @@
-/** @license DuidSystem v1.0.9
+/** @license DuidSystem v1.0.11
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -1797,9 +1797,742 @@
   Col.propTypes = propTypes ;
   Col.defaultProps = defaultProps;
 
+  var background = {
+    bg_primary: {
+      backgroundColor: '#0d6efd !important'
+    },
+    bg_secondary: {
+      backgroundColor: '#6c757d !important'
+    },
+    bg_success: {
+      backgroundColor: '#198754 !important'
+    },
+    bg_info: {
+      backgroundColor: '#0dcaf0 !important'
+    },
+    bg_warning: {
+      backgroundColor: '#ffc107 !important'
+    },
+    bg_danger: {
+      backgroundColor: '#dc3545 !important'
+    },
+    bg_light: {
+      backgroundColor: '#f8f9fa !important'
+    },
+    bg_dark: {
+      backgroundColor: '#212529 !important'
+    },
+    bg_body: {
+      backgroundColor: '#fff !important'
+    },
+    bg_white: {
+      backgroundColor: '#fff !important'
+    },
+    bg_transparent: {
+      backgroundColor: 'transparent !important'
+    },
+    bg_gradient: {
+      backgroundImage: 'var(--bs-gradient) !important'
+    }
+  };
+
+  var border = {
+    border: {
+      border: '1px solid #dee2e6 !important'
+    },
+    border_0: {
+      border: '0 !important',
+      borderWidth: '0 !important'
+    },
+    border_1: {
+      borderWidth: '1px !important'
+    },
+    border_2: {
+      borderWidth: '2px !important'
+    },
+    border_3: {
+      borderWidth: '3px !important'
+    },
+    border_4: {
+      borderWidth: '4px !important'
+    },
+    border_5: {
+      borderWidth: '5px !important'
+    },
+    border_top: {
+      borderTop: '1px solid #dee2e6 !important'
+    },
+    border_top_0: {
+      borderTop: '0 !important'
+    },
+    border_end: {
+      borderRight: '1px solid #dee2e6 !important'
+    },
+    border_end_0: {
+      borderRight: '0 !important'
+    },
+    border_bottom: {
+      borderBottom: '1px solid #dee2e6 !important'
+    },
+    border_bottom_0: {
+      borderBottom: '0 !important'
+    },
+    border_start: {
+      borderLeft: '1px solid #dee2e6 !important'
+    },
+    border_start_0: {
+      borderLeft: '0 !important'
+    },
+    border_primary: {
+      borderColor: '#0d6efd !important'
+    },
+    border_secondary: {
+      borderColor: '#6c757d !important'
+    },
+    border_success: {
+      borderColor: '#198754 !important'
+    },
+    border_info: {
+      borderColor: '#0dcaf0 !important'
+    },
+    border_warning: {
+      borderColor: '#ffc107 !important'
+    },
+    border_danger: {
+      borderColor: '#dc3545 !important'
+    },
+    border_light: {
+      borderColor: '#f8f9fa !important'
+    },
+    border_dark: {
+      borderColor: '#212529 !important'
+    },
+    border_white: {
+      borderColor: '#fff !important'
+    }
+  };
+
+  var text = {
+    text_lowercase: {
+      textTransform: 'lowercase !important'
+    },
+    text_uppercase: {
+      textTransform: 'uppercase !important'
+    },
+    text_capitalize: {
+      textTransform: 'capitalize !important'
+    },
+    text_start: {
+      textAlign: 'left !important'
+    },
+    text_end: {
+      textAlign: 'right !important'
+    },
+    text_center: {
+      textAlign: 'center !important'
+    },
+    text_primary: {
+      color: '#0d6efd !important'
+    },
+    text_secondary: {
+      color: '#6c757d !important'
+    },
+    text_success: {
+      color: '#198754 !important'
+    },
+    text_info: {
+      color: '#0dcaf0 !important'
+    },
+    text_warning: {
+      color: '#ffc107 !important'
+    },
+    text_danger: {
+      color: '#dc3545 !important'
+    },
+    text_light: {
+      color: '#f8f9fa !important'
+    },
+    text_dark: {
+      color: '#212529 !important'
+    },
+    text_white: {
+      color: '#fff !important'
+    },
+    text_body: {
+      color: '#212529 !important'
+    },
+    text_muted: {
+      color: '#6c757d !important'
+    },
+    text_black_50: {
+      color: 'rgba(0, 0, 0, 0.5) !important'
+    },
+    text_white_50: {
+      color: 'rgba(255, 255, 255, 0.5) !important'
+    },
+    text_reset: {
+      color: 'inherit !important'
+    },
+    text_wrap: {
+      whiteSpace: 'normal !important'
+    },
+    text_nowrap: {
+      whiteSpace: 'nowrap !important'
+    },
+    text_decoration_none: {
+      textDecoration: 'none !important'
+    },
+    text_decoration_underline: {
+      textDecoration: 'underline !important'
+    },
+    text_decoration_line_through: {
+      textDecoration: 'line-through !important'
+    },
+    text_break: {
+      wordWrap: 'break-word !important',
+      wordBreak: 'break-word !important'
+    }
+  };
+
+  var cardStyles = {
+    card: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      minWidth: 0,
+      wordWrap: "break-word",
+      backgroundColor: "#fff",
+      backgroundClip: "border-box",
+      border: "1px solid rgba(0, 0, 0, 0.125)",
+      borderRadius: "0.25rem",
+      '& > hr': {
+        marginRight: 0,
+        marginLeft: 0
+      }
+      /*'& > $list_group': {
+          borderTop: "inherit",
+          borderBottom: "inherit"
+      },
+      '& > $list_group:first-child': {
+          borderTopWidth: 0,
+          borderTopLeftRadius: 'calc(0.25rem - 1px)',
+          borderTopRightRadius: 'calc(0.25rem - 1px)'
+      },
+      '& > $list_group:last-child': {
+          borderBottomWidth: 0,
+          borderBottomRightRadius: 'calc(0.25rem - 1px)',
+          borderBottomLeftRadius: 'calc(0.25rem - 1px)'
+      }*/
+
+    }
+  };
+
+  var Card = function Card(_ref) {
+    var styles = _ref.styles,
+        classes = _ref.classes,
+        children = _ref.children,
+        resProps = _objectWithoutProperties(_ref, ["styles", "classes", "children"]);
+
+    var classesList = getStyles(cardStyles, styles, classes);
+    var newClasseName = getClassesNames(classesList);
+    return /*#__PURE__*/React__default['default'].createElement("div", _extends({
+      className: newClasseName
+    }, resProps), children);
+  };
+  /*
+
+  all card classes
+  const cardClasses = [
+      "card"
+  ];
+
+  */
+
+  /*
+
+
+  import { useBootstrapPrefix } from './ThemeProvider';
+  import createWithBsPrefix from './createWithBsPrefix';
+  import divWithClassName from './divWithClassName';
+  import CardContext from './CardContext';
+  import CardImg from './CardImg';
+  import {
+    BsPrefixPropsWithChildren,
+    BsPrefixRefForwardingComponent,
+  } from './helpers';
+  import { Color, Variant } from './types';
+  */
+
+  /*
+
+  const CardImgOverlay = createWithBsPrefix('card-img-overlay');
+  */
+
+  /*
+  export interface CardProps extends BsPrefixPropsWithChildren {
+    bg?: Variant;
+    text?: Color;
+    border?: Variant;
+    body?: boolean;
+  }
+
+  type Card = BsPrefixRefForwardingComponent<'div', CardProps> & {
+    Img: typeof CardImg;
+    Title: typeof CardTitle;
+    Subtitle: typeof CardSubtitle;
+    Body: typeof CardBody;
+    Link: typeof CardLink;
+    Text: typeof CardText;
+    Header: typeof CardHeader;
+    Footer: typeof CardFooter;
+    ImgOverlay: typeof CardImgOverlay;
+  };
+
+  const propTypes = {
+
+    bsPrefix: PropTypes.string,
+
+
+    bg: PropTypes.string,
+
+    text: PropTypes.string,
+
+
+    border: PropTypes.string,
+
+
+    body: PropTypes.bool,
+
+    as: PropTypes.elementType,
+  };
+
+  const defaultProps = {
+    body: false,
+  };
+
+  const Card: Card = (React.forwardRef(
+    (
+      {
+        bsPrefix,
+        className,
+        bg,
+        text,
+        border,
+        body,
+        children,
+        // Need to define the default "as" during prop destructuring to be compatible with styled-components github.com/react-bootstrap/react-bootstrap/issues/3595
+        as: Component = 'div',
+        ...props
+      }: CardProps,
+      ref,
+    ) => {
+      const prefix = useBootstrapPrefix(bsPrefix, 'card');
+      const cardContext = useMemo(
+        () => ({
+          cardHeaderBsPrefix: `${prefix}-header`,
+        }),
+        [prefix],
+      );
+
+      return (
+        <CardContext.Provider value={cardContext}>
+          <Component
+            ref={ref}
+            {...props}
+            className={classNames(
+              className,
+              prefix,
+              bg && `bg-${bg}`,
+              text && `text-${text}`,
+              border && `border-${border}`,
+            )}
+          >
+            {body ? (
+              // @ts-ignore
+              <CardBody>{children}</CardBody>
+            ) : (
+              children
+            )}
+          </Component>
+        </CardContext.Provider>
+      );
+    },
+  ) as unknown) as Card;
+
+  Card.displayName = 'Card';
+  Card.propTypes = propTypes;
+  Card.defaultProps = defaultProps;
+
+  Card.Img = CardImg;
+  Card.Title = CardTitle;
+  Card.Subtitle = CardSubtitle;
+  Card.Body = CardBody;
+  Card.Link = CardLink;
+  Card.Text = CardText;
+  Card.Header = CardHeader;
+  Card.Footer = CardFooter;
+  Card.ImgOverlay = CardImgOverlay;
+
+  export default Card;
+  */
+
+  var cardTitleStyles = {
+    card_title: {
+      marginBottom: '0.3rem',
+      marginTop: 0,
+      fontWeight: 500,
+      lineHeight: '1.2',
+      fontSize: '1.25rem'
+    }
+  };
+
+  var CardTitle = function CardTitle(_ref) {
+    var styles = _ref.styles,
+        classes = _ref.classes,
+        children = _ref.children,
+        resProps = _objectWithoutProperties(_ref, ["styles", "classes", "children"]);
+
+    var classesList = getStyles(cardTitleStyles, styles, classes);
+    var newClasseName = getClassesNames(classesList);
+    return /*#__PURE__*/React__default['default'].createElement("div", _extends({
+      className: newClasseName
+    }, resProps), children);
+  };
+
+  var cardBodyStyles = {
+    card_body: {
+      flex: '1 1 auto',
+      padding: '1rem 1rem'
+    }
+  };
+
+  var CardBody = function CardBody(_ref) {
+    var styles = _ref.styles,
+        classes = _ref.classes,
+        children = _ref.children,
+        resProps = _objectWithoutProperties(_ref, ["styles", "classes", "children"]);
+
+    var classesList = getStyles(cardBodyStyles, styles, classes);
+    var newClasseName = getClassesNames(classesList);
+    return /*#__PURE__*/React__default['default'].createElement("div", _extends({
+      className: newClasseName
+    }, resProps), children);
+  };
+
+  var cardHeaderStyles = {
+    card_header: {
+      padding: '0.5rem 1rem',
+      marginBottom: 0,
+      backgroundColor: 'rgba(0, 0, 0, 0.03)',
+      borderBottom: '1px solid rgba(0, 0, 0, 0.125)',
+      '&:first-child': {
+        borderRadius: 'calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0'
+      }
+    },
+    card_header_tabs: {
+      marginRight: '-0.5rem',
+      marginBottom: '-0.5rem',
+      marginLeft: '-0.5rem',
+      borderBottom: 0
+    },
+    card_header_pills: {
+      marginRight: '-0.5rem',
+      marginLeft: '-0.5rem'
+    }
+  };
+
+  var CardHeader = function CardHeader(_ref) {
+    var styles = _ref.styles,
+        classes = _ref.classes,
+        children = _ref.children,
+        resProps = _objectWithoutProperties(_ref, ["styles", "classes", "children"]);
+
+    var classesList = getStyles(cardHeaderStyles, styles, classes);
+    var newClasseName = getClassesNames(classesList);
+    return /*#__PURE__*/React__default['default'].createElement("div", _extends({
+      className: newClasseName
+    }, resProps), children);
+  };
+
+  var cardSubtitleStyles = {
+    card_subtitle: {
+      marginTop: 0,
+      marginBottom: '0.3rem',
+      fontWeight: 500,
+      lineHeight: '1.2',
+      fontSize: '1rem'
+    }
+  };
+
+  var CardSubtitle = function CardSubtitle(_ref) {
+    var styles = _ref.styles,
+        classes = _ref.classes,
+        children = _ref.children,
+        resProps = _objectWithoutProperties(_ref, ["styles", "classes", "children"]);
+
+    var classesList = getStyles(cardSubtitleStyles, styles, classes);
+    var newClasseName = getClassesNames(classesList);
+    return /*#__PURE__*/React__default['default'].createElement("div", _extends({
+      className: newClasseName
+    }, resProps), children);
+  };
+
+  var cardLinkStyles = {
+    card_link: {
+      color: '#0d6efd',
+      textDecoration: 'none',
+      '&:hover': {
+        textDecoration: 'none',
+        color: '#0a58ca'
+      },
+      '& + $card_link': {
+        marginLeft: '1rem'
+      },
+      '&:not([href]):not([class]), a:not([href]):not([class]):hover': {
+        color: 'inherit',
+        textDecoration: 'none'
+      }
+    }
+  };
+
+  var CardLink = function CardLink(_ref) {
+    var styles = _ref.styles,
+        classes = _ref.classes,
+        children = _ref.children,
+        resProps = _objectWithoutProperties(_ref, ["styles", "classes", "children"]);
+
+    var classesList = getStyles(cardLinkStyles, styles, classes);
+    var newClasseName = getClassesNames(classesList);
+    return /*#__PURE__*/React__default['default'].createElement("a", _extends({
+      className: newClasseName
+    }, resProps), children);
+  };
+
+  var cardTextStyles = {
+    card_text: {
+      '&:last-child': {
+        marginBottom: 0
+      }
+    }
+  };
+
+  var cardText = function cardText(_ref) {
+    var styles = _ref.styles,
+        classes = _ref.classes,
+        children = _ref.children,
+        resProps = _objectWithoutProperties(_ref, ["styles", "classes", "children"]);
+
+    var classesList = getStyles(cardTextStyles, styles, classes);
+    var newClasseName = getClassesNames(classesList);
+    return /*#__PURE__*/React__default['default'].createElement("p", _extends({
+      className: newClasseName
+    }, resProps), children);
+  };
+
+  var cardFooterStyles = {
+    card_footer: {
+      padding: '0.5rem 1rem',
+      backgroundColor: 'rgba(0, 0, 0, 0.03)',
+      borderTop: '1px solid rgba(0, 0, 0, 0.125)',
+      '&:last-child': {
+        borderRadius: '0 0 calc(0.25rem - 1px) calc(0.25rem - 1px)'
+      }
+    }
+  };
+
+  var CardFooter = function CardFooter(_ref) {
+    var styles = _ref.styles,
+        classes = _ref.classes,
+        children = _ref.children,
+        resProps = _objectWithoutProperties(_ref, ["styles", "classes", "children"]);
+
+    var classesList = getStyles(cardFooterStyles, styles, classes);
+    var newClasseName = getClassesNames(classesList);
+    return /*#__PURE__*/React__default['default'].createElement("div", _extends({
+      className: newClasseName
+    }, resProps), children);
+  };
+
+  var cardImgOverlayStyles = {
+    card_img_overlay: {
+      position: 'absolute',
+      top: 0,
+      right: 0,
+      bottom: 0,
+      left: 0,
+      padding: '1rem',
+      borderRadius: 'calc(0.25rem - 1px)'
+    }
+  };
+
+  var CardImgOverlay = function CardImgOverlay(_ref) {
+    var styles = _ref.styles,
+        classes = _ref.classes,
+        children = _ref.children,
+        resProps = _objectWithoutProperties(_ref, ["styles", "classes", "children"]);
+
+    var classesList = getStyles(cardImgOverlayStyles, styles, classes);
+    var newClasseName = getClassesNames(classesList);
+    return /*#__PURE__*/React__default['default'].createElement("div", _extends({
+      className: newClasseName
+    }, resProps), children);
+  };
+
+  var cardImgStyles = {
+    card_img: {
+      width: '100%',
+      borderTopLeftRadius: 'calc(0.25rem - 1px)',
+      borderTopRightRadius: 'calc(0.25rem - 1px)',
+      borderBottomRightRadius: 'calc(0.25rem - 1px)',
+      borderBottomLeftRadius: 'calc(0.25rem - 1px)'
+    },
+    card_img_top: {
+      width: '100%',
+      borderTopLeftRadius: 'calc(0.25rem - 1px)',
+      borderTopRightRadius: 'calc(0.25rem - 1px)'
+    },
+    card_img_bottom: {
+      width: '100%',
+      borderBottomRightRadius: 'calc(0.25rem - 1px)',
+      borderBottomLeftRadius: 'calc(0.25rem - 1px)'
+    }
+  };
+
+  var CardImg = function CardImg(_ref) {
+    var styles = _ref.styles,
+        classes = _ref.classes,
+        children = _ref.children,
+        resProps = _objectWithoutProperties(_ref, ["styles", "classes", "children"]);
+
+    var classesList = getStyles(cardImgStyles, styles, classes);
+    var newClasseName = getClassesNames(classesList);
+    return /*#__PURE__*/React__default['default'].createElement("img", _extends({
+      className: newClasseName,
+      alt: "duidsystem_img"
+    }, resProps), children);
+  };
+
+  var cardColumnsStyles = {};
+
+  var CardColumns = function CardColumns(_ref) {
+    var styles = _ref.styles,
+        classes = _ref.classes,
+        children = _ref.children,
+        resProps = _objectWithoutProperties(_ref, ["styles", "classes", "children"]);
+
+    var classesList = getStyles(cardColumnsStyles, styles, classes);
+    var newClasseName = getClassesNames(classesList);
+    return /*#__PURE__*/React__default['default'].createElement("div", _extends({
+      className: newClasseName
+    }, resProps), children);
+  };
+
+  var cardGroupStyles = {
+    card_group: {
+      '@media (min-width: 576px)': {
+        display: 'flex',
+        flexFlow: 'row wrap'
+      }
+      /*'& > $card': {
+          marginBottom: '0.75rem',
+          '@media (min-width: 576px)': {
+              flex: '1 0 0%',
+              marginBottom: 0,
+          }
+      },
+      '& > $card + $card': {
+          '@media (min-width: 576px)': {
+              marginLeft: 0,
+              borderLeft: 0,
+          }
+      },
+      '& > $card:not(:last-child)': {
+          '@media (min-width: 576px)': {
+              borderTopRightRadius: 0,
+              borderBottomRightRadius: 0,
+          }
+      },
+      '& > $card:not(:last-child) $card_img_top': {
+          '@media (min-width: 576px)': {
+              borderTopRightRadius: 0,
+          }
+      },
+      '& > $card:not(:last-child) $card_header': {
+          '@media (min-width: 576px)': {
+              borderTopRightRadius: 0,
+          }
+      },
+      '& > $card:not(:last-child) $card_img_bottom': {
+          '@media (min-width: 576px)': {
+              borderBottomRightRadius: 0,
+          }
+      },
+      '& > $card:not(:last-child) $card_footer': {
+          '@media (min-width: 576px)': {
+              borderBottomRightRadius: 0,
+          }
+      },
+      '& > $card:not(:first-child)': {
+          '@media (min-width: 576px)': {
+              borderTopLeftRadius: 0,
+              borderBottomLeftRadius: 0
+          }
+      },
+      '& > $card:not(:first-child) $card_img_top': {
+          '@media (min-width: 576px)': {
+              borderTopLeftRadius: 0,
+          }
+      },
+      '& > $card:not(:first-child) $card_header': {
+          '@media (min-width: 576px)': {
+              borderTopLeftRadius: 0,
+          }
+      },
+      '& > $card:not(:first-child) $card_img_bottom': {
+          '@media (min-width: 576px)': {
+              borderBottomLeftRadius: 0
+          }
+      },
+      '& > $card:not(:first-child) $card_footer': {
+          '@media (min-width: 576px)': {
+              borderBottomLeftRadius: 0
+          }
+      }*/
+
+    }
+  };
+
+  var CardGroup = function CardGroup(_ref) {
+    var styles = _ref.styles,
+        classes = _ref.classes,
+        children = _ref.children,
+        resProps = _objectWithoutProperties(_ref, ["styles", "classes", "children"]);
+
+    var classesList = getStyles(cardGroupStyles, styles, classes);
+    var newClasseName = getClassesNames(classesList);
+    return /*#__PURE__*/React__default['default'].createElement("div", _extends({
+      className: newClasseName
+    }, resProps), children);
+  };
+
+  exports.BackgroundThemes = background;
+  exports.BorderThemes = border;
+  exports.Card = Card;
+  exports.CardBody = CardBody;
+  exports.CardColumns = CardColumns;
+  exports.CardFooter = CardFooter;
+  exports.CardGroup = CardGroup;
+  exports.CardHeader = CardHeader;
+  exports.CardImg = CardImg;
+  exports.CardImgOverlay = CardImgOverlay;
+  exports.CardLink = CardLink;
+  exports.CardSubtitle = CardSubtitle;
+  exports.CardText = cardText;
+  exports.CardTitle = CardTitle;
   exports.Col = Col;
   exports.Container = Container;
   exports.Row = Row;
+  exports.TextThemes = text;
 
   Object.defineProperty(exports, '__esModule', { value: true });
 

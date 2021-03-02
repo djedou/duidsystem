@@ -1,4 +1,6 @@
-export * from './layout'; //export { default as Form } from "./Form";
+export * from './layout';
+export * from './themes';
+export * from './components'; //export { default as Form } from "./Form";
 
 /*export { default as DuidStyle } from "./DuidStyle";
 export { default as ModalForm } from "./ModalForm";

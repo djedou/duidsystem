@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { rowStyles } from './rowStyle';
 import {getStyles, getClassesNames}  from '../styles/stylesMarker';
 
@@ -15,19 +15,9 @@ const classesProps = [
 ];
 
 
-const Row = (props) => {
-
-	const [ classesState, setClasses ] = useState();
-	const [ stylesValue, setStylesValue ] = useState();
-	const [ childrenObj, setChildrenObj ] = useState();
-	const [ resProps, setResProps ] = useState();
+const Row = ({ styles, classes, children, ...resProps }) => {
 	
-	useEffect(() => {
-		const { styles, classes, children, ...resProps} = props;
-		setStylesValue(styles);
-		setChildrenObj(children);
-		setResProps(resProps);
-
+	const getParameters = () => {
 		const sizePrefix = 'row_cols';
 		const classesValue = ["row"];
 
@@ -50,17 +40,21 @@ const Row = (props) => {
 				if(!classesValue.includes(cl)) classesValue.push(cl)
 			});
 		}
-		setClasses(classesValue)
-	},[props]);
+
+		return {
+			classesState: classesValue,
+			propsRes: resProps,
+		}
+	};
 
 	
-
-    const classesList = getStyles(rowStyles, stylesValue, classesState);
+	let params = getParameters();
+    const classesList = getStyles(rowStyles, styles, params.classesState);
     const newClasseName = getClassesNames(classesList);
 
     return (
-      <div className={newClasseName} {...resProps}> 
-        {childrenObj}
+      <div className={newClasseName} {...params.propsRes}> 
+        {children}
       </div>
     )
 }

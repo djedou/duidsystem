@@ -1,9 +1,11 @@
-/** @license DuidSystem v1.0.9
+/** @license DuidSystem v1.0.11
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-export * from './layout'; //export { default as Form } from "./Form";
+export * from './layout';
+export * from './themes';
+export * from './components'; //export { default as Form } from "./Form";
 
 /*export { default as DuidStyle } from "./DuidStyle";
 export { default as ModalForm } from "./ModalForm";

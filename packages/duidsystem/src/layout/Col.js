@@ -1,40 +1,31 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { colStyles } from './colStyle';
 import {getStyles, getClassesNames}  from '../styles/stylesMarker';
-import { elementType } from 'prop-types';
+import PropTypes from 'prop-types';
+
 
 
 const classesProps = [
     "col",
-    "xl",
-    "lg",
-    "md",
-    "sm",
-    "xs" 
+    "xl", // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+    "lg", // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+    "md", // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+    "sm", // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+    "xs"  // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
 ];
 
 const propTypes = {
-    as: elementType,
+    as: PropTypes.elementType,
 };
 
 const defaultProps = {
     as: 'div',
 };
 
-const Col = (props) => {
 
-	const [ classesState, setClasses ] = useState();
-	const [ stylesValue, setStylesValue ] = useState();
-	const [ childrenObj, setChildrenObj ] = useState();
-	const [ resProps, setResProps ] = useState();
-
+const Col = ({ styles, classes, children, ...resProps}) => {
 	
-	useEffect(() => {
-        const { styles, classes, children, ...resProps} = props;
-		setStylesValue(styles);
-		setChildrenObj(children);
-		setResProps(resProps);
-        
+	const getParameters = () => {        
 		const prefix = 'col';
 		const classesValue = [];
         const spans = [];
@@ -78,24 +69,28 @@ const Col = (props) => {
         spans.forEach((sp) => {
             if(!classesValue.includes(sp)) classesValue.push(sp)
         });
-        
-		setClasses(classesValue)
 
-	},[props]);
+        return {
+			classesState: classesValue,
+			propsRes: resProps,
+		}
+
+	};
 
 	
-
-    const classesList = getStyles(colStyles, stylesValue, classesState);
+    let params = getParameters();
+    const classesList = getStyles(colStyles, styles, params.classesState);
     const newClasseName = getClassesNames(classesList);
 
     return (
-      <div className={newClasseName} {...resProps}> 
-        {childrenObj}
+      <div className={newClasseName} {...params.propsRes}> 
+        {children}
       </div>
     )
 }
 
 Col.propTypes = propTypes;
 Col.defaultProps = defaultProps;
+
 
 export default Col;

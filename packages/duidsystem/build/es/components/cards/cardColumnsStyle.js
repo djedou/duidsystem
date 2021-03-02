@@ -1,0 +1,2 @@
+const cardColumnsStyles = {};
+export { cardColumnsStyles };
