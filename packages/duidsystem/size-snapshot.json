@@ -1,7 +1,7 @@
 {
   "duidsystem.production.min.js": {
-    "bundled": 60017,
-    "minified": 30117,
-    "gzipped": 5285
+    "bundled": 59526,
+    "minified": 30297,
+    "gzipped": 5405
   }
 }

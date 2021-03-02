@@ -1,7 +1,5 @@
 "use strict";
 
-var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");
-
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
 Object.defineProperty(exports, "__esModule", {
@@ -15,53 +13,34 @@ var _typeof2 = _interopRequireDefault(require("@babel/runtime/helpers/typeof"));
 
 var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/helpers/objectWithoutProperties"));
 
-var _slicedToArray2 = _interopRequireDefault(require("@babel/runtime/helpers/slicedToArray"));
-
-var _react = _interopRequireWildcard(require("react"));
+var _react = _interopRequireDefault(require("react"));
 
 var _colStyle = require("./colStyle");
 
 var _stylesMarker = require("../styles/stylesMarker");
 
-var _propTypes = require("prop-types");
+var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var classesProps = ["col", "xl", "lg", "md", "sm", "xs"];
+var classesProps = ["col", "xl", // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+"lg", // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+"md", // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+"sm", // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+"xs" // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+];
 var propTypes = process.env.NODE_ENV !== "production" ? {
-  as: _propTypes.elementType
+  as: _propTypes["default"].elementType
 } : {};
 var defaultProps = {
   as: 'div'
 };
 
-var Col = function Col(props) {
-  var _useState = (0, _react.useState)(),
-      _useState2 = (0, _slicedToArray2["default"])(_useState, 2),
-      classesState = _useState2[0],
-      setClasses = _useState2[1];
+var Col = function Col(_ref) {
+  var styles = _ref.styles,
+      classes = _ref.classes,
+      children = _ref.children,
+      resProps = (0, _objectWithoutProperties2["default"])(_ref, ["styles", "classes", "children"]);
 
-  var _useState3 = (0, _react.useState)(),
-      _useState4 = (0, _slicedToArray2["default"])(_useState3, 2),
-      stylesValue = _useState4[0],
-      setStylesValue = _useState4[1];
-
-  var _useState5 = (0, _react.useState)(),
-      _useState6 = (0, _slicedToArray2["default"])(_useState5, 2),
-      childrenObj = _useState6[0],
-      setChildrenObj = _useState6[1];
-
-  var _useState7 = (0, _react.useState)(),
-      _useState8 = (0, _slicedToArray2["default"])(_useState7, 2),
-      resProps = _useState8[0],
-      setResProps = _useState8[1];
-
-  (0, _react.useEffect)(function () {
-    var styles = props.styles,
-        classes = props.classes,
-        children = props.children,
-        resProps = (0, _objectWithoutProperties2["default"])(props, ["styles", "classes", "children"]);
-    setStylesValue(styles);
-    setChildrenObj(children);
-    setResProps(resProps);
+  var getParameters = function getParameters() {
     var prefix = 'col';
     var classesValue = [];
     var spans = [];
@@ -101,13 +80,18 @@ var Col = function Col(props) {
     spans.forEach(function (sp) {
       if (!classesValue.includes(sp)) classesValue.push(sp);
     });
-    setClasses(classesValue);
-  }, [props]);
-  var classesList = (0, _stylesMarker.getStyles)(_colStyle.colStyles, stylesValue, classesState);
+    return {
+      classesState: classesValue,
+      propsRes: resProps
+    };
+  };
+
+  var params = getParameters();
+  var classesList = (0, _stylesMarker.getStyles)(_colStyle.colStyles, styles, params.classesState);
   var newClasseName = (0, _stylesMarker.getClassesNames)(classesList);
   return /*#__PURE__*/_react["default"].createElement("div", (0, _extends2["default"])({
     className: newClasseName
-  }, resProps), childrenObj);
+  }, params.propsRes), children);
 };
 
 process.env.NODE_ENV !== "production" ? Col.propTypes = propTypes : void 0;

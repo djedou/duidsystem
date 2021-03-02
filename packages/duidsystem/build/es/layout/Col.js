@@ -1,33 +1,31 @@
 import _extends from "@babel/runtime/helpers/esm/extends";
 import _objectWithoutPropertiesLoose from "@babel/runtime/helpers/esm/objectWithoutPropertiesLoose";
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { colStyles } from './colStyle';
 import { getStyles, getClassesNames } from '../styles/stylesMarker';
-import { elementType } from 'prop-types';
-const classesProps = ["col", "xl", "lg", "md", "sm", "xs"];
+import PropTypes from 'prop-types';
+const classesProps = ["col", "xl", // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+"lg", // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+"md", // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+"sm", // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+"xs" // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+];
 const propTypes = process.env.NODE_ENV !== "production" ? {
-  as: elementType
+  as: PropTypes.elementType
 } : {};
 const defaultProps = {
   as: 'div'
 };
 
-const Col = props => {
-  const [classesState, setClasses] = useState();
-  const [stylesValue, setStylesValue] = useState();
-  const [childrenObj, setChildrenObj] = useState();
-  const [resProps, setResProps] = useState();
-  useEffect(() => {
-    const {
-      styles,
-      classes,
-      children
-    } = props,
-          resProps = _objectWithoutPropertiesLoose(props, ["styles", "classes", "children"]);
+const Col = (_ref) => {
+  let {
+    styles,
+    classes,
+    children
+  } = _ref,
+      resProps = _objectWithoutPropertiesLoose(_ref, ["styles", "classes", "children"]);
 
-    setStylesValue(styles);
-    setChildrenObj(children);
-    setResProps(resProps);
+  const getParameters = () => {
     const prefix = 'col';
     const classesValue = [];
     const spans = [];
@@ -68,13 +66,18 @@ const Col = props => {
     spans.forEach(sp => {
       if (!classesValue.includes(sp)) classesValue.push(sp);
     });
-    setClasses(classesValue);
-  }, [props]);
-  const classesList = getStyles(colStyles, stylesValue, classesState);
+    return {
+      classesState: classesValue,
+      propsRes: resProps
+    };
+  };
+
+  let params = getParameters();
+  const classesList = getStyles(colStyles, styles, params.classesState);
   const newClasseName = getClassesNames(classesList);
   return /*#__PURE__*/React.createElement("div", _extends({
     className: newClasseName
-  }, resProps), childrenObj);
+  }, params.propsRes), children);
 };
 
 process.env.NODE_ENV !== "production" ? Col.propTypes = propTypes : void 0;

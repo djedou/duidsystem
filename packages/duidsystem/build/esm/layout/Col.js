@@ -1,49 +1,30 @@
 import _extends from "@babel/runtime/helpers/esm/extends";
 import _typeof from "@babel/runtime/helpers/esm/typeof";
 import _objectWithoutProperties from "@babel/runtime/helpers/esm/objectWithoutProperties";
-import _slicedToArray from "@babel/runtime/helpers/esm/slicedToArray";
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { colStyles } from './colStyle';
 import { getStyles, getClassesNames } from '../styles/stylesMarker';
-import { elementType } from 'prop-types';
-var classesProps = ["col", "xl", "lg", "md", "sm", "xs"];
+import PropTypes from 'prop-types';
+var classesProps = ["col", "xl", // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+"lg", // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+"md", // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+"sm", // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+"xs" // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+];
 var propTypes = process.env.NODE_ENV !== "production" ? {
-  as: elementType
+  as: PropTypes.elementType
 } : {};
 var defaultProps = {
   as: 'div'
 };
 
-var Col = function Col(props) {
-  var _useState = useState(),
-      _useState2 = _slicedToArray(_useState, 2),
-      classesState = _useState2[0],
-      setClasses = _useState2[1];
+var Col = function Col(_ref) {
+  var styles = _ref.styles,
+      classes = _ref.classes,
+      children = _ref.children,
+      resProps = _objectWithoutProperties(_ref, ["styles", "classes", "children"]);
 
-  var _useState3 = useState(),
-      _useState4 = _slicedToArray(_useState3, 2),
-      stylesValue = _useState4[0],
-      setStylesValue = _useState4[1];
-
-  var _useState5 = useState(),
-      _useState6 = _slicedToArray(_useState5, 2),
-      childrenObj = _useState6[0],
-      setChildrenObj = _useState6[1];
-
-  var _useState7 = useState(),
-      _useState8 = _slicedToArray(_useState7, 2),
-      resProps = _useState8[0],
-      setResProps = _useState8[1];
-
-  useEffect(function () {
-    var styles = props.styles,
-        classes = props.classes,
-        children = props.children,
-        resProps = _objectWithoutProperties(props, ["styles", "classes", "children"]);
-
-    setStylesValue(styles);
-    setChildrenObj(children);
-    setResProps(resProps);
+  var getParameters = function getParameters() {
     var prefix = 'col';
     var classesValue = [];
     var spans = [];
@@ -83,13 +64,18 @@ var Col = function Col(props) {
     spans.forEach(function (sp) {
       if (!classesValue.includes(sp)) classesValue.push(sp);
     });
-    setClasses(classesValue);
-  }, [props]);
-  var classesList = getStyles(colStyles, stylesValue, classesState);
+    return {
+      classesState: classesValue,
+      propsRes: resProps
+    };
+  };
+
+  var params = getParameters();
+  var classesList = getStyles(colStyles, styles, params.classesState);
   var newClasseName = getClassesNames(classesList);
   return /*#__PURE__*/React.createElement("div", _extends({
     className: newClasseName
-  }, resProps), childrenObj);
+  }, params.propsRes), children);
 };
 
 process.env.NODE_ENV !== "production" ? Col.propTypes = propTypes : void 0;

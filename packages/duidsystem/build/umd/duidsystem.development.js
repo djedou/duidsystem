@@ -1,4 +1,4 @@
-/** @license DuidSystem v1.0.11
+/** @license DuidSystem v1.0.12
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -7,11 +7,12 @@
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('react'), require('@material-ui/styles'), require('prop-types')) :
   typeof define === 'function' && define.amd ? define(['exports', 'react', '@material-ui/styles', 'prop-types'], factory) :
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.duidsystem = {}, global.React, global['@material-ui/styles'], global.PropTypes));
-}(this, (function (exports, React, styles, propTypes$1) { 'use strict';
+}(this, (function (exports, React, styles, PropTypes) { 'use strict';
 
   function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
   var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
+  var PropTypes__default = /*#__PURE__*/_interopDefaultLegacy(PropTypes);
 
   function _extends() {
     _extends = Object.assign || function (target) {
@@ -589,36 +590,13 @@
 
   var classesProps = ["row", "lg", "md", "sm", "xl", "xxl", "xs"];
 
-  var Row = function Row(props) {
-    var _useState = React.useState(),
-        _useState2 = _slicedToArray(_useState, 2),
-        classesState = _useState2[0],
-        setClasses = _useState2[1];
+  var Row = function Row(_ref) {
+    var styles = _ref.styles,
+        classes = _ref.classes,
+        children = _ref.children,
+        resProps = _objectWithoutProperties(_ref, ["styles", "classes", "children"]);
 
-    var _useState3 = React.useState(),
-        _useState4 = _slicedToArray(_useState3, 2),
-        stylesValue = _useState4[0],
-        setStylesValue = _useState4[1];
-
-    var _useState5 = React.useState(),
-        _useState6 = _slicedToArray(_useState5, 2),
-        childrenObj = _useState6[0],
-        setChildrenObj = _useState6[1];
-
-    var _useState7 = React.useState(),
-        _useState8 = _slicedToArray(_useState7, 2),
-        resProps = _useState8[0],
-        setResProps = _useState8[1];
-
-    React.useEffect(function () {
-      var styles = props.styles,
-          classes = props.classes,
-          children = props.children,
-          resProps = _objectWithoutProperties(props, ["styles", "classes", "children"]);
-
-      setStylesValue(styles);
-      setChildrenObj(children);
-      setResProps(resProps);
+    var getParameters = function getParameters() {
       var sizePrefix = 'row_cols';
       var classesValue = ["row"];
       classesProps.forEach(function (brkPoint) {
@@ -640,13 +618,18 @@
         });
       }
 
-      setClasses(classesValue);
-    }, [props]);
-    var classesList = getStyles(rowStyles, stylesValue, classesState);
+      return {
+        classesState: classesValue,
+        propsRes: resProps
+      };
+    };
+
+    var params = getParameters();
+    var classesList = getStyles(rowStyles, styles, params.classesState);
     var newClasseName = getClassesNames(classesList);
     return /*#__PURE__*/React__default['default'].createElement("div", _extends({
       className: newClasseName
-    }, resProps), childrenObj);
+    }, params.propsRes), children);
   };
 
   var global$1 = (typeof global !== "undefined" ? global :
@@ -1708,44 +1691,26 @@
     }
   };
 
-  var classesProps$1 = ["col", "xl", "lg", "md", "sm", "xs"];
+  var classesProps$1 = ["col", "xl", // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+  "lg", // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+  "md", // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+  "sm", // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+  "xs" // {(boolean|"auto"|number|{ span: boolean|"auto"|number, offset: number, order: "first"|"last"|number })}
+  ];
   var propTypes = {
-    as: propTypes$1.elementType
+    as: PropTypes__default['default'].elementType
   } ;
   var defaultProps = {
     as: 'div'
   };
 
-  var Col = function Col(props) {
-    var _useState = React.useState(),
-        _useState2 = _slicedToArray(_useState, 2),
-        classesState = _useState2[0],
-        setClasses = _useState2[1];
+  var Col = function Col(_ref) {
+    var styles = _ref.styles,
+        classes = _ref.classes,
+        children = _ref.children,
+        resProps = _objectWithoutProperties(_ref, ["styles", "classes", "children"]);
 
-    var _useState3 = React.useState(),
-        _useState4 = _slicedToArray(_useState3, 2),
-        stylesValue = _useState4[0],
-        setStylesValue = _useState4[1];
-
-    var _useState5 = React.useState(),
-        _useState6 = _slicedToArray(_useState5, 2),
-        childrenObj = _useState6[0],
-        setChildrenObj = _useState6[1];
-
-    var _useState7 = React.useState(),
-        _useState8 = _slicedToArray(_useState7, 2),
-        resProps = _useState8[0],
-        setResProps = _useState8[1];
-
-    React.useEffect(function () {
-      var styles = props.styles,
-          classes = props.classes,
-          children = props.children,
-          resProps = _objectWithoutProperties(props, ["styles", "classes", "children"]);
-
-      setStylesValue(styles);
-      setChildrenObj(children);
-      setResProps(resProps);
+    var getParameters = function getParameters() {
       var prefix = 'col';
       var classesValue = [];
       var spans = [];
@@ -1785,13 +1750,18 @@
       spans.forEach(function (sp) {
         if (!classesValue.includes(sp)) classesValue.push(sp);
       });
-      setClasses(classesValue);
-    }, [props]);
-    var classesList = getStyles(colStyles, stylesValue, classesState);
+      return {
+        classesState: classesValue,
+        propsRes: resProps
+      };
+    };
+
+    var params = getParameters();
+    var classesList = getStyles(colStyles, styles, params.classesState);
     var newClasseName = getClassesNames(classesList);
     return /*#__PURE__*/React__default['default'].createElement("div", _extends({
       className: newClasseName
-    }, resProps), childrenObj);
+    }, params.propsRes), children);
   };
 
   Col.propTypes = propTypes ;
@@ -1994,8 +1964,23 @@
     }
   };
 
+  function _defineProperty(obj, key, value) {
+    if (key in obj) {
+      Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      });
+    } else {
+      obj[key] = value;
+    }
+
+    return obj;
+  }
+
   var cardStyles = {
-    card: {
+    card: _defineProperty({
       position: "relative",
       display: "flex",
       flexDirection: "column",
@@ -2004,27 +1989,13 @@
       backgroundColor: "#fff",
       backgroundClip: "border-box",
       border: "1px solid rgba(0, 0, 0, 0.125)",
-      borderRadius: "0.25rem",
-      '& > hr': {
-        marginRight: 0,
-        marginLeft: 0
-      }
-      /*'& > $list_group': {
-          borderTop: "inherit",
-          borderBottom: "inherit"
-      },
-      '& > $list_group:first-child': {
-          borderTopWidth: 0,
-          borderTopLeftRadius: 'calc(0.25rem - 1px)',
-          borderTopRightRadius: 'calc(0.25rem - 1px)'
-      },
-      '& > $list_group:last-child': {
-          borderBottomWidth: 0,
-          borderBottomRightRadius: 'calc(0.25rem - 1px)',
-          borderBottomLeftRadius: 'calc(0.25rem - 1px)'
-      }*/
-
-    }
+      borderRadius: "5px",
+      boxShadow: '2px 2px 5px 1px blue',
+      marginBottom: '0.3rem',
+      marginTop: '0.3rem',
+      width: '350px',
+      height: '350px'
+    }, "border", '3px solid rgba(0, 0, 0, 0.125)')
   };
 
   var Card = function Card(_ref) {
@@ -2310,6 +2281,11 @@
 
   var cardTextStyles = {
     card_text: {
+      overflow: 'auto',
+      width: '100%',
+      height: '70%',
+      display: 'flex',
+      alignItems: 'center',
       '&:last-child': {
         marginBottom: 0
       }
@@ -2412,7 +2388,18 @@
     }, resProps), children);
   };
 
-  var cardColumnsStyles = {};
+  var cardColumnsStyles = {
+    card_columns: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      margin: '0.2rem',
+      justifyContent: 'space-evenly',
+      flexDirection: 'row',
+      flexFlow: 'wrap',
+      alignItems: 'center',
+      alignContent: 'space-evenly'
+    }
+  };
 
   var CardColumns = function CardColumns(_ref) {
     var styles = _ref.styles,

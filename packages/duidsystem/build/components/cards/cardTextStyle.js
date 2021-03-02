@@ -6,6 +6,11 @@ Object.defineProperty(exports, "__esModule", {
 exports.cardTextStyles = void 0;
 var cardTextStyles = {
   card_text: {
+    overflow: 'auto',
+    width: '100%',
+    height: '70%',
+    display: 'flex',
+    alignItems: 'center',
     '&:last-child': {
       marginBottom: 0
     }
